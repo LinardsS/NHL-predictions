@@ -1,5 +1,12 @@
 from importCsv import getTeamsStats
 import utils
+import numpy as np
+import pandas as pd
+import pandas_datareader as pdr
+import matplotlib.pyplot as plt
+import seaborn as sb
+sb.set()
+import datetime as dt
 
 def predictGame(home_team, away_team, date = None):
     if date is None:
@@ -23,18 +30,18 @@ def processGame(prediction, result):
     log_loss = utils.logLoss([result], home_team_prob)
     return log_loss
 
-a = predictGame("Toronto Maple Leafs", "Pittsburgh Penguins") # 2-4
-b = predictGame("Washington Capitals", "Tampa Bay Lightning") # 5-1
-c = predictGame("Dallas Stars", "San Jose Sharks")            # 4-5
-d = predictGame("Seattle Kraken", "Minnesota Wild")           # 0-1
+# a = predictGame("Toronto Maple Leafs", "Pittsburgh Penguins") # 2-4
+# b = predictGame("Washington Capitals", "Tampa Bay Lightning") # 5-1
+# c = predictGame("Dallas Stars", "San Jose Sharks")            # 4-5
+# d = predictGame("Seattle Kraken", "Minnesota Wild")           # 0-1
 
-log_loss = []
-predictions = []
+# log_loss = []
+# predictions = []
 
-log_loss.append(processGame(a, 0))
-log_loss.append(processGame(b,1))
-log_loss.append(processGame(c,0))
-log_loss.append(processGame(d,0))
+# log_loss.append(processGame(a, 0))
+# log_loss.append(processGame(b,1))
+# log_loss.append(processGame(c,0))
+# log_loss.append(processGame(d,0))
 
-result = sum(log_loss) / len(log_loss)
-print("Log loss for 4 games: " + str(result))
+# result = sum(log_loss) / len(log_loss)
+# print("Log loss for 4 games: " + str(result))
