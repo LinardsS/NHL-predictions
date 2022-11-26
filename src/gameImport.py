@@ -28,8 +28,15 @@ def loadGames(start_date = "2022-10-07", end_date = None):
                 date = date[:-10]       # remove timestamp characters
                 game_entry.append(date) # add gameDate
                 game_entry.append(game['gamePk'])   # add gameId
-                game_entry.append(game['teams']['home']['team']['name']) # add home team
-                game_entry.append(game['teams']['away']['team']['name']) # add away team
+                #process exception where Montreal Canadiens written as Montréal Canadiens
+                if game['teams']['home']['team']['name'] == "Montréal Canadiens":
+                    game_entry.append("Montreal Canadiens")
+                else:
+                    game_entry.append(game['teams']['home']['team']['name']) # add home team
+                if game['teams']['away']['team']['name'] == "Montréal Canadiens":
+                    game_entry.append("Montreal Canadiens")
+                else:
+                    game_entry.append(game['teams']['away']['team']['name']) # add away team
                 games.append(game_entry)
     basepath = path.dirname(__file__)
     filename = "NHL 2022-23 Games.csv"
