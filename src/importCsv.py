@@ -9,7 +9,7 @@ def getTeamsStats(date, home_team, away_team, format = None):
         today = date.today()
         date = today.strftime("%d-%m-%y")
     if format is True:
-        datetime.datetime.strptime(date, '%Y-%m-%d').strftime('%d-%m-%y')
+        date = datetime.strptime(date, '%Y-%m-%d').strftime('%d-%m-%y')
     filename = FILE_PREFIX + date + '.csv'
     filepath = path.abspath(path.join(basepath, "..", "data", filename))
 

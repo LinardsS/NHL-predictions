@@ -47,4 +47,3 @@ def loadGames(start_date = "2022-10-07", end_date = None):
     return requestJson
 #createGameFile()
 #loadGames(end_date="2023-04-13")
-

@@ -56,71 +56,105 @@ def encoding(filepath = None):
         result = chardet.detect(rawdata.read(100000))
     return result  
 #uploadResultsAndStats(start_date="2022-10-07") #date of season opener
-def tempStatsUpload():
-    home_team = game['teams']['home']['team']['name']
-    if home_team == "Montréal Canadiens":
-        home_team = "Montreal Canadiens" #encoding workaround
-    away_team = game['teams']['away']['team']['name']
-    if away_team == "Montréal Canadiens":
-        away_team = "Montreal Canadiens" #encoding workaround
-    date = game['gameDate'] # first need to format date to remove timestamp
-    date = date[:-10] #trim timestamp 
+def tempStatsUpload(end_date = None):
+    # home_team = game['teams']['home']['team']['name']
+    # if home_team == "Montréal Canadiens":
+    #     home_team = "Montreal Canadiens" #encoding workaround
+    # away_team = game['teams']['away']['team']['name']
+    # if away_team == "Montréal Canadiens":
+    #     away_team = "Montreal Canadiens" #encoding workaround
+    # date = game['gameDate'] # first need to format date to remove timestamp
+    # date = date[:-10] #trim timestamp 
     ##change date format to dd-mm-yy as API returns YYYY-MM-DD
-    game_dict = importCsv.getTeamsStats(date, home_team, away_team, format = True)
-    home_team_dict = game_dict['home_team']
-    away_team_dict = game_dict['away_team']
     #updates csv row with home team stats
-    df.loc[row_index,"h_point%"] = game_dict['home_team']['Point %']
-    df.loc[row_index,"h_cf%"] = game_dict['home_team']['CF%']
-    df.loc[row_index,"h_ff%"] = game_dict['home_team']['FF%']
-    df.loc[row_index,"h_sf%"] = game_dict['home_team']['SF%']
-    df.loc[row_index,"h_gf%"] = game_dict['home_team']['GF%']
-    df.loc[row_index,"h_xgf%"] = game_dict['home_team']['xGF%']
-    df.loc[row_index,"h_scf%"] = game_dict['home_team']['SCF%']
-    df.loc[row_index,"h_scsf%"] = game_dict['home_team']['SCSF%']
-    df.loc[row_index,"h_scgf%"] = game_dict['home_team']['SCGF%']
-    df.loc[row_index,"h_scsh%"] = game_dict['home_team']['SCSH%']
-    df.loc[row_index,"h_scsv%"] = game_dict['home_team']['SCSV%']
-    df.loc[row_index,"h_hdsf%"] = game_dict['home_team']['HDSF%']
-    df.loc[row_index,"h_hdgf%"] = game_dict['home_team']['HDGF%']
-    df.loc[row_index,"h_hdsh%"] = game_dict['home_team']['HDSH%']
-    df.loc[row_index,"h_hdsv%"] = game_dict['home_team']['HDSV%']
-    df.loc[row_index,"h_mdsf%"] = game_dict['home_team']['MDSF%']
-    df.loc[row_index,"h_mdgf%"] = game_dict['home_team']['MDGF%']
-    df.loc[row_index,"h_mdsh%"] = game_dict['home_team']['MDSH%']
-    df.loc[row_index,"h_mdsv%"] = game_dict['home_team']['MDSV%']
-    df.loc[row_index,"h_ldsf%"] = game_dict['home_team']['LDSF%']
-    df.loc[row_index,"h_ldgf%"] = game_dict['home_team']['LDGF%']
-    df.loc[row_index,"h_ldsh%"] = game_dict['home_team']['LDSH%']
-    df.loc[row_index,"h_ldsv%"] = game_dict['home_team']['LDSV%']
-    df.loc[row_index,"h_sh%"] = game_dict['home_team']['SH%']
-    df.loc[row_index,"h_sv%"] = game_dict['home_team']['SV%']
-    df.loc[row_index,"h_PDO"] = game_dict['home_team']['PDO']
-    #away team
-    df.loc[row_index,"a_point%"] = game_dict['away_team']['Point %']
-    df.loc[row_index,"a_cf%"] = game_dict['away_team']['CF%']
-    df.loc[row_index,"a_ff%"] = game_dict['away_team']['FF%']
-    df.loc[row_index,"a_sf%"] = game_dict['away_team']['SF%']
-    df.loc[row_index,"a_gf%"] = game_dict['away_team']['GF%']
-    df.loc[row_index,"a_xgf%"] = game_dict['away_team']['xGF%']
-    df.loc[row_index,"a_scf%"] = game_dict['away_team']['SCF%']
-    df.loc[row_index,"a_scsf%"] = game_dict['away_team']['SCSF%']
-    df.loc[row_index,"a_scgf%"] = game_dict['away_team']['SCGF%']
-    df.loc[row_index,"a_scsh%"] = game_dict['away_team']['SCSH%']
-    df.loc[row_index,"a_scsv%"] = game_dict['away_team']['SCSV%']
-    df.loc[row_index,"a_hdsf%"] = game_dict['away_team']['HDSF%']
-    df.loc[row_index,"a_hdgf%"] = game_dict['away_team']['HDGF%']
-    df.loc[row_index,"a_hdsh%"] = game_dict['away_team']['HDSH%']
-    df.loc[row_index,"a_hdsv%"] = game_dict['away_team']['HDSV%']
-    df.loc[row_index,"a_mdsf%"] = game_dict['away_team']['MDSF%']
-    df.loc[row_index,"a_mdgf%"] = game_dict['away_team']['MDGF%']
-    df.loc[row_index,"a_mdsh%"] = game_dict['away_team']['MDSH%']
-    df.loc[row_index,"a_mdsv%"] = game_dict['away_team']['MDSV%']
-    df.loc[row_index,"a_ldsf%"] = game_dict['away_team']['LDSF%']
-    df.loc[row_index,"a_ldgf%"] = game_dict['away_team']['LDGF%']
-    df.loc[row_index,"a_ldsh%"] = game_dict['away_team']['LDSH%']
-    df.loc[row_index,"a_ldsv%"] = game_dict['away_team']['LDSV%']
-    df.loc[row_index,"a_sh%"] = game_dict['away_team']['SH%']
-    df.loc[row_index,"a_sv%"] = game_dict['away_team']['SV%']
-    df.loc[row_index,"a_PDO"] = game_dict['away_team']['PDO']
+    if end_date is None:
+        end_date = utils.getTodaysDate("%Y-%m-%d")
+    basepath = path.dirname(__file__)
+    filename = "NHL 2022-23 Games.csv"
+    filepath = path.abspath(path.join(basepath, "..", "data", filename))
+    df = pd.read_csv(filepath)
+    #game_id=2022020326
+    for row_index, row in df.iterrows():
+        date = row["date"]
+        if date == "2022-10-07":
+            continue #skip first game
+        if date == end_date:
+            break    #stop reading csv file as team stats file won't exist for tomorrow
+        home_team = row["home_team"]
+        away_team = row["away_team"]
+        print(date,home_team,away_team)
+        game_dict = importCsv.getTeamsStats(date, home_team, away_team, format = True)
+        #print(game_dict)
+        home_team_dict = game_dict['home_team']
+        away_team_dict = game_dict['away_team']
+        df.loc[row_index,"h_point%"] = home_team_dict['Point %']
+        df.loc[row_index,"h_cf%"] = home_team_dict['CF%']
+        df.loc[row_index,"h_ff%"] = home_team_dict['FF%']
+        df.loc[row_index,"h_sf%"] = home_team_dict['SF%']
+        df.loc[row_index,"h_gf%"] = home_team_dict['GF%']
+        df.loc[row_index,"h_xgf%"] = home_team_dict['xGF%']
+        df.loc[row_index,"h_scf%"] = home_team_dict['SCF%']
+        df.loc[row_index,"h_scsf%"] = home_team_dict['SCSF%']
+        df.loc[row_index,"h_scgf%"] = home_team_dict['SCGF%']
+        df.loc[row_index,"h_scsh%"] = home_team_dict['SCSH%']
+        df.loc[row_index,"h_scsv%"] = home_team_dict['SCSV%']
+        df.loc[row_index,"h_hdsf%"] = home_team_dict['HDSF%']
+        df.loc[row_index,"h_hdgf%"] = home_team_dict['HDGF%']
+        df.loc[row_index,"h_hdsh%"] = home_team_dict['HDSH%']
+        df.loc[row_index,"h_hdsv%"] = home_team_dict['HDSV%']
+        df.loc[row_index,"h_mdsf%"] = home_team_dict['MDSF%']
+        df.loc[row_index,"h_mdgf%"] = home_team_dict['MDGF%']
+        df.loc[row_index,"h_mdsh%"] = home_team_dict['MDSH%']
+        df.loc[row_index,"h_mdsv%"] = home_team_dict['MDSV%']
+        df.loc[row_index,"h_ldsf%"] = home_team_dict['LDSF%']
+        df.loc[row_index,"h_ldgf%"] = home_team_dict['LDGF%']
+        df.loc[row_index,"h_ldsh%"] = home_team_dict['LDSH%']
+        df.loc[row_index,"h_ldsv%"] = home_team_dict['LDSV%']
+        df.loc[row_index,"h_sh%"] = home_team_dict['SH%']
+        df.loc[row_index,"h_sv%"] = home_team_dict['SV%']
+        df.loc[row_index,"h_PDO"] = home_team_dict['PDO']
+        #away team
+        df.loc[row_index,"a_point%"] = away_team_dict['Point %']
+        df.loc[row_index,"a_cf%"] = away_team_dict['CF%']
+        df.loc[row_index,"a_ff%"] = away_team_dict['FF%']
+        df.loc[row_index,"a_sf%"] = away_team_dict['SF%']
+        df.loc[row_index,"a_gf%"] = away_team_dict['GF%']
+        df.loc[row_index,"a_xgf%"] = away_team_dict['xGF%']
+        df.loc[row_index,"a_scf%"] = away_team_dict['SCF%']
+        df.loc[row_index,"a_scsf%"] = away_team_dict['SCSF%']
+        df.loc[row_index,"a_scgf%"] = away_team_dict['SCGF%']
+        df.loc[row_index,"a_scsh%"] = away_team_dict['SCSH%']
+        df.loc[row_index,"a_scsv%"] = away_team_dict['SCSV%']
+        df.loc[row_index,"a_hdsf%"] = away_team_dict['HDSF%']
+        df.loc[row_index,"a_hdgf%"] = away_team_dict['HDGF%']
+        df.loc[row_index,"a_hdsh%"] = away_team_dict['HDSH%']
+        df.loc[row_index,"a_hdsv%"] = away_team_dict['HDSV%']
+        df.loc[row_index,"a_mdsf%"] = away_team_dict['MDSF%']
+        df.loc[row_index,"a_mdgf%"] = away_team_dict['MDGF%']
+        df.loc[row_index,"a_mdsh%"] = away_team_dict['MDSH%']
+        df.loc[row_index,"a_mdsv%"] = away_team_dict['MDSV%']
+        df.loc[row_index,"a_ldsf%"] = away_team_dict['LDSF%']
+        df.loc[row_index,"a_ldgf%"] = away_team_dict['LDGF%']
+        df.loc[row_index,"a_ldsh%"] = away_team_dict['LDSH%']
+        df.loc[row_index,"a_ldsv%"] = away_team_dict['LDSV%']
+        df.loc[row_index,"a_sh%"] = away_team_dict['SH%']
+        df.loc[row_index,"a_sv%"] = away_team_dict['SV%']
+        df.loc[row_index,"a_PDO"] = away_team_dict['PDO']
+    filename = "NHL 2022-23 Games Stat Upload Test.csv"
+    filepath = path.abspath(path.join(basepath, "..", "data", filename))
+    df.to_csv(filepath, index=False)
 
+#tempStatsUpload(date="2022-11-26",home_team = "Columbus Blue Jackets",away_team= "New York Islanders")
+# basepath = path.dirname(__file__)
+# filename = "NHL 2022-23 Games.csv"
+# filepath = path.abspath(path.join(basepath, "..", "data", filename))
+# df = pd.read_csv(filepath)
+# game_id=2022020326
+# row_index =  df.index[df['game_id'] == game_id]
+# for index,row in df.iterrows():
+#     print(row["date"])
+#     if index > 2:
+#         break
+tempStatsUpload()
+# game_dict = importCsv.getTeamsStats("2022-10-16", "St. Louis Blues", "Columbus Blue Jackets", format = True)
+# print(game_dict['home_team'])
