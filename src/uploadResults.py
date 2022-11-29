@@ -83,8 +83,19 @@ def tempStatsUpload(end_date = None):
         home_team = row["home_team"]
         away_team = row["away_team"]
         print(date,home_team,away_team)
-        game_dict = importCsv.getTeamsStats(date, home_team, away_team, format = True)
+        game_dict = importCsv.getTeamsStats(date, home_team, away_team, format = True, backdate = True)
         #print(game_dict)
+        if game_dict == {}:
+            print("Team data missing for: \n")
+            print(date,home_team,away_team) # print for debugging purposes
+            continue    # if team stats file not found, don't touch csv rows
+        #2 checks if dictionary present but one team's data is missing
+        if "home_team" not in list(game_dict.keys()):
+            print(home_team + " stats missing from " + date )
+            continue
+        if "away_team" not in list(game_dict.keys()):
+            print(away_team + " stats missing from " + date )
+            continue
         home_team_dict = game_dict['home_team']
         away_team_dict = game_dict['away_team']
         df.loc[row_index,"h_point%"] = home_team_dict['Point %']
@@ -140,7 +151,7 @@ def tempStatsUpload(end_date = None):
         df.loc[row_index,"a_sh%"] = away_team_dict['SH%']
         df.loc[row_index,"a_sv%"] = away_team_dict['SV%']
         df.loc[row_index,"a_PDO"] = away_team_dict['PDO']
-    filename = "NHL 2022-23 Games Stat Upload Test.csv"
+    filename = "NHL 2022-23 Games Stat Upload Test2.csv"
     filepath = path.abspath(path.join(basepath, "..", "data", filename))
     df.to_csv(filepath, index=False)
 

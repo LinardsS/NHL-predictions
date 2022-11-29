@@ -1,5 +1,5 @@
 import numpy as np
-from datetime import date,timedelta
+from datetime import date,timedelta, datetime
 
 def logLikelihood(actual, predicted):
     """
@@ -51,8 +51,10 @@ def logLoss(actual, predicted):
     """
     return np.mean(logLikelihood(actual, predicted)) 
 
-def getTodaysDate(format = "%d-%m-%y"):
+def getTodaysDate(format = "%d-%m-%y",backdate = None):
     today = date.today()
+    if backdate is True:
+        today = today - timedelta(days=1)
     return today.strftime(format)
 def getYesterdaysDate(format = "%d-%m-%y"):
     yesterday = date.today() - timedelta(1)
