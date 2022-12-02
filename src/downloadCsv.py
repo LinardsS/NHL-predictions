@@ -36,7 +36,7 @@ def downloadTeamStats(today, date, file_date):
     old_file = os.path.join(directory, "games.csv")
     new_file = os.path.join(directory, "Team Season Totals - " + file_datestamp + ".csv")
     os.rename(old_file, new_file)
-downloadTeamStats(today = True, date = None, file_date = None) # this will get auto-executed daily, don't touch
+#downloadTeamStats(today = True, date = None, file_date = None) # this will get auto-executed daily, don't touch
 
 #will go through dates from beginning of season until  25-10-22 to download missing team stats files
 # downloadTeamStats(today = False, date = "2022-10-07", file_date="07-10-22")
