@@ -249,5 +249,5 @@ def tempStatsUpload(end_date = None):
 #     print(row["date"])
 #     if index > 2:
 #         break
-tempStatsUpload(end_date = "2022-11-30")
+#tempStatsUpload(end_date = "2022-11-30")
 #uploadResultsAndStats()

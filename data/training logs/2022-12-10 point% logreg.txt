@@ -1,0 +1,39 @@
+[[ 96 106]
+ [ 74 133]]
+409
+0.5599022004889975
+<statsmodels.discrete.discrete_model.Logit object at 0x00000209415F1F70>
+Optimization terminated successfully.
+         Current function value: 0.688128
+         Iterations 4
+                           Logit Regression Results
+==============================================================================
+Dep. Variable:                 result   No. Observations:                  409
+Model:                          Logit   Df Residuals:                      407
+Method:                           MLE   Df Model:                            1
+Date:                Sat, 10 Dec 2022   Pseudo R-squ.:                0.007134
+Time:                        14:23:05   Log-Likelihood:                -281.44
+converged:                       True   LL-Null:                       -283.47
+Covariance Type:            nonrobust   LLR p-value:                   0.04432
+==============================================================================
+                 coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------
+h_point%       0.7526      0.378      1.989      0.047       0.011       1.494
+a_point%      -0.7008      0.375     -1.871      0.061      -1.435       0.033
+==============================================================================
+                        Results: Logit
+===============================================================
+Model:              Logit            Pseudo R-squared: 0.007
+Dependent Variable: result           AIC:              566.8889
+Date:               2022-12-10 14:23 BIC:              574.9163
+No. Observations:   409              Log-Likelihood:   -281.44
+Df Model:           1                LL-Null:          -283.47
+Df Residuals:       407              LLR p-value:      0.044319
+Converged:          1.0000           Scale:            1.0000
+No. Iterations:     4.0000
+----------------------------------------------------------------
+              Coef.   Std.Err.     z     P>|z|    [0.025  0.975]
+----------------------------------------------------------------
+h_point%      0.7526    0.3784   1.9892  0.0467   0.0110  1.4942
+a_point%     -0.7008    0.3746  -1.8707  0.0614  -1.4350  0.0334
+===============================================================
