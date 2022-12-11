@@ -151,8 +151,8 @@ def tempStatsUpload(end_date = None):
     #game_id=2022020326
     for row_index, row in df.iterrows():
         date = row["date"]
-        if date == "2022-10-07" or date == "2022-10-08":
-            continue #skip first game
+        if date == "2022-10-07" or date == "2022-10-08" or date == "2021-10-12" or date == "2021-10-13":
+            continue #skip first games
         if date == end_date:
             break    #stop reading csv file as team stats file won't exist for tomorrow
         home_team = row["home_team"]
@@ -226,8 +226,8 @@ def tempStatsUpload(end_date = None):
         df.loc[row_index,"a_sh%"] = away_team_dict['SH%']
         df.loc[row_index,"a_sv%"] = away_team_dict['SV%']
         df.loc[row_index,"a_PDO"] = away_team_dict['PDO']
-    # filename = "NHL 2022-23 Games Stat Upload Test2.csv"
-    # filepath = path.abspath(path.join(basepath, "..", "data", filename))
+    filename = "NHL 2021-22 Games Stat Upload Test.csv"
+    filepath = path.abspath(path.join(basepath, "..", "data", filename))
     df.to_csv(filepath, index=False)
 
 #tempStatsUpload(date="2022-11-26",home_team = "Columbus Blue Jackets",away_team= "New York Islanders")
@@ -251,3 +251,4 @@ def tempStatsUpload(end_date = None):
 #         break
 #tempStatsUpload(end_date = "2022-11-30")
 #uploadResultsAndStats()
+#tempStatsUpload(end_date = "2022-04-30")
