@@ -61,6 +61,9 @@ def getTodaysDate(format = "%d-%m-%y",backdate = None):
 def getYesterdaysDate(format = "%d-%m-%y"):
     yesterday = date.today() - timedelta(1)
     return yesterday.strftime(format)
+def getTomorrowsDate(format = "%d-%m-%y"):
+    tomorrow = date.today() + timedelta(1)
+    return tomorrow.strftime(format)
 def deleteCsvFirstColumn(filename):
     basepath = path.dirname(__file__)
     filepath = path.abspath(path.join(basepath, "..", "data", filename))
@@ -119,3 +122,5 @@ def convertDateStringFormat(date,in_format,out_format, delta = None):
         date = datetime.strptime(date, in_format)
         date = date-timedelta(days=delta)
         return date.strftime(out_format)
+
+print(getTomorrowsDate(format = "%d-%m-%y"))
