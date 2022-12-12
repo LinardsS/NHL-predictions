@@ -11,7 +11,7 @@ def getTeamsStats(date, home_team, away_team, format = None, backdate = None):
     if format is True:
         date = datetime.strptime(date, '%Y-%m-%d')
         if backdate is True:
-            date = date-timedelta(days=1)
+            date = date-timedelta(days=2)
         date = date.strftime('%d-%m-%y')
     filename = FILE_PREFIX + date + '.csv'
     filepath = path.abspath(path.join(basepath, "..", "data", filename))

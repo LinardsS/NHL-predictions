@@ -1,5 +1,7 @@
 import numpy as np
 from datetime import date,timedelta, datetime
+import pandas as pd
+from os import path
 
 def logLikelihood(actual, predicted):
     """
@@ -59,3 +61,12 @@ def getTodaysDate(format = "%d-%m-%y",backdate = None):
 def getYesterdaysDate(format = "%d-%m-%y"):
     yesterday = date.today() - timedelta(1)
     return yesterday.strftime(format)
+def deleteCsvFirstColumn(filename):
+    basepath = path.dirname(__file__)
+    filepath = path.abspath(path.join(basepath, "..", "data", filename))
+    df = pd.read_csv(filepath)
+    # Select first column
+    first_column = df.columns[0]
+    # Delete first column
+    df = df.drop([first_column], axis=1)
+    df.to_csv(filepath, index=False)
