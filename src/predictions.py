@@ -71,5 +71,43 @@ def savePrediction(game_id, type, prediction):
     if type == 'logreg':
         df.loc[row_index,'logreg_prediction'] = prediction
     df.to_csv(filepath, index=False)
-#logRegPredictGame(home_team="Winnipeg Jets", away_team="Washington Capitals", date = "10-12-22")
-#logRegPredictSlate("2022-12-13")
+
+def scorePredictions():
+    # open predictions file
+    basepath = path.dirname(__file__)
+    filepath = path.abspath(path.join(basepath, "..", "data", "Predictions.csv"))
+    df = pd.read_csv(filepath)
+    logreg_prediction_count = df.count().loc["logreg_prediction"]
+    logreg_correct_prediction_count = 0
+    counter = 0
+    for row_index, row in df.iterrows():
+        if not pd.isna(row["result"]) and not pd.isna(row["logreg_prediction"]):
+             if int(row["result"]) == int(row["logreg_prediction"]):
+                logreg_correct_prediction_count += 1
+        else:
+            counter += 1
+            if counter == logreg_prediction_count:
+                break
+            continue
+        counter += 1
+        if counter == logreg_prediction_count:
+            break
+    logreg_success_rate = logreg_correct_prediction_count / logreg_prediction_count
+        
+    
+    print("Logreg prediction count: ", logreg_prediction_count)
+    print("Correct logreg prediction count: ", logreg_correct_prediction_count)
+
+    #write prediction score statistics into scoring file  
+    basepath = path.dirname(__file__)
+    filepath = path.abspath(path.join(basepath, "..", "data", "Predictions Scoring.csv"))
+    df2 = pd.read_csv(filepath)
+    logreg_index = df2.index[df2['model'] == "logreg"]
+    df2.loc[logreg_index,"games_predicted"] = logreg_prediction_count
+    df2.loc[logreg_index,"correct_predictions"] = logreg_correct_prediction_count
+    df2.loc[logreg_index,"correct_percentage"]= logreg_success_rate
+    df2.to_csv(filepath, index=False)
+
+    
+
+scorePredictions()

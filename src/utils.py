@@ -122,5 +122,3 @@ def convertDateStringFormat(date,in_format,out_format, delta = None):
         date = datetime.strptime(date, in_format)
         date = date-timedelta(days=delta)
         return date.strftime(out_format)
-
-print(getTomorrowsDate(format = "%d-%m-%y"))

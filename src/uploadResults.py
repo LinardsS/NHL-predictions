@@ -22,8 +22,10 @@ def uploadResultsAndStats(start_date = None, end_date = None):
     filename = "NHL 2022-23 Games.csv"
     filepath = path.abspath(path.join(basepath, "..", "data", filename))
     df = pd.read_csv(filepath)
-    # first_column = df.columns[0]
-    # df = df.drop([first_column], axis=1)
+    # open predictions csv to add scores there as well
+    filename_predictions = "Predictions.csv"
+    filepath_predictions = path.abspath(path.join(basepath, "..", "data", filename_predictions))
+    df2 = pd.read_csv(filepath_predictions)
 
     for date in requestJson['dates']:
         for game in date['games']:
@@ -31,6 +33,7 @@ def uploadResultsAndStats(start_date = None, end_date = None):
                 if game['status']['statusCode'] == "7" or game['status']['statusCode'] == "6": # 7 or 6 - Final, otherwise don't process game as it won't contain scores 
                     game_id = game['gamePk']   # get gameId
                     row_index =  df.index[df['game_id'] == game_id] # find game by ID in csv file
+                    pred_row_index = df2.index[df2['game_id'] == game_id] # find game by ID in predictions csv file
                     #update game row with goals for both teams and respective result
                     home_team_goals = game['teams']['home']['score']
                     away_team_goals = game['teams']['away']['score']
@@ -41,6 +44,11 @@ def uploadResultsAndStats(start_date = None, end_date = None):
                     df.loc[row_index,"home_team_goals"] = home_team_goals
                     df.loc[row_index,"away_team_goals"] = away_team_goals
                     df.loc[row_index,"result"] = result
+
+                    #update scores in predictions csv file as well
+                    df2.loc[pred_row_index,"home_team_goals"] = home_team_goals
+                    df2.loc[pred_row_index,"away_team_goals"] = away_team_goals
+                    df2.loc[pred_row_index,"result"] = result
 
                     game_date = df.loc[row_index,"date"].item()
                     home_team = df.loc[row_index,"home_team"].item()

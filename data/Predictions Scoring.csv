@@ -1,0 +1,2 @@
+model,games_predicted,correct_predictions,correct_percentage
+logreg,6.0,0.0,0.0
