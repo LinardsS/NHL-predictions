@@ -44,4 +44,10 @@ def test():
     datum = utils.getTodaysDate(format = "%d-%m-%y",backdate = None)
     filename = 'log_reg_' + datum + '_2.sav'
     pickle.dump(logreg, open(filename, 'wb'))
-test()
+def loadModel(model_name):
+    filename = model_name + ".sav"
+    loaded_model = pickle.load(open(filename, 'rb'))
+    return loaded_model
+# model = loadModel("log_reg_12-12-22_2")
+# prediction = model.predict()
+#test()

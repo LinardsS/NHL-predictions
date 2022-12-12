@@ -65,8 +65,57 @@ def deleteCsvFirstColumn(filename):
     basepath = path.dirname(__file__)
     filepath = path.abspath(path.join(basepath, "..", "data", filename))
     df = pd.read_csv(filepath)
+    print("Columns: " + df.columns)
     # Select first column
     first_column = df.columns[0]
     # Delete first column
     df = df.drop([first_column], axis=1)
     df.to_csv(filepath, index=False)
+def createGameDataframe(home_team_dict,away_team_dict):
+    home_team_dict = convertTeamDictionary(home_team_dict, home_team = True)
+    away_team_dict = convertTeamDictionary(away_team_dict, home_team = False)
+    res_dictionary = home_team_dict | away_team_dict #merge the two dictionaries
+    df = pd.DataFrame([res_dictionary])
+    return df
+def convertTeamDictionary(dictionary, home_team):
+    # determine the prefix for keys - h_ for home, a_ for away
+    if home_team is True:
+        prefix = "h_"
+    else:
+        prefix = "a_"
+    temp_dict = {}
+    temp_dict[prefix + "point%"] = dictionary['Point %']
+    temp_dict[prefix + "cf%"] = dictionary['CF%']
+    temp_dict[prefix + "ff%"] = dictionary['FF%']
+    temp_dict[prefix + "sf%"] = dictionary['SF%']
+    temp_dict[prefix + "gf%"] = dictionary['GF%']
+    temp_dict[prefix + "xgf%"] = dictionary['xGF%']
+    temp_dict[prefix + "scf%"] = dictionary['SCF%']
+    temp_dict[prefix + "scsf%"] = dictionary['SCSF%']
+    temp_dict[prefix + "scgf%"] = dictionary['SCGF%']
+    temp_dict[prefix + "scsh%"] = dictionary['SCSH%']
+    temp_dict[prefix + "scsv%"] = dictionary['SCSV%']
+    temp_dict[prefix + "hdsf%"] = dictionary['HDSF%']
+    temp_dict[prefix + "hdgf%"] = dictionary['HDGF%']
+    temp_dict[prefix + "hdsh%"] = dictionary['HDSH%']
+    temp_dict[prefix + "hdsv%"] = dictionary['HDSV%']
+    temp_dict[prefix + "mdsf%"] = dictionary['MDSF%']
+    temp_dict[prefix + "mdgf%"] = dictionary['MDGF%']
+    temp_dict[prefix + "mdsh%"] = dictionary['MDSH%']
+    temp_dict[prefix + "mdsv%"] = dictionary['MDSV%']
+    temp_dict[prefix + "ldsf%"] = dictionary['LDSF%']
+    temp_dict[prefix + "ldgf%"] = dictionary['LDGF%']
+    temp_dict[prefix + "ldsh%"] = dictionary['LDSH%']
+    temp_dict[prefix + "ldsv%"] = dictionary['LDSV%']
+    temp_dict[prefix + "sh%"] = dictionary['SH%']
+    temp_dict[prefix + "sv%"] = dictionary['SV%']
+    temp_dict[prefix + "PDO"] = dictionary['PDO']
+    return temp_dict
+
+def convertDateStringFormat(date,in_format,out_format, delta = None):
+    if delta is None:
+        return datetime.strptime(date, in_format).strftime(out_format)
+    else:
+        date = datetime.strptime(date, in_format)
+        date = date-timedelta(days=delta)
+        return date.strftime(out_format)

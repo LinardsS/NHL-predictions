@@ -7,6 +7,9 @@ import matplotlib.pyplot as plt
 import seaborn as sb
 sb.set()
 import datetime as dt
+import pickle
+from os import path
+from logisticRegression import loadModel
 
 def predictGame(home_team, away_team, date = None):
     if date is None:
@@ -29,19 +32,44 @@ def processGame(prediction, result):
     home_team_prob.append(prediction[0])
     log_loss = utils.logLoss([result], home_team_prob)
     return log_loss
+def logRegPredictGame(home_team, away_team, date = None):
+    if date is None:
+        date = utils.getTodaysDate()
+    game_dict = getTeamsStats(date, home_team, away_team)
+    home_team_dict = game_dict['home_team']
+    away_team_dict = game_dict['away_team']
+    df = utils.createGameDataframe(home_team_dict,away_team_dict)
+    #load model
+    model_name = "log_reg_12-12-22_2"
+    model = loadModel(model_name)
+    prediction = model.predict(df)
+    return prediction[0]
+#will use logistic regression model on all games of a given slate
+def logRegPredictSlate(date):
+    #get games for given date
+    basepath = path.dirname(__file__)
+    filepath = path.abspath(path.join(basepath, "..", "data", "Predictions.csv"))
+    df = pd.read_csv(filepath)
+    games = df.loc[df['date'] == date]
+    print(games)
+    for game_index, game in games.iterrows():
+        h_team  = game['home_team']
+        a_team  = game['away_team']
+        datum   = game['date'] # need to convert from YYYY-MM-DD to DD-MM-YYYY for stats file retrieval
+        datum   = utils.convertDateStringFormat(datum,in_format="%Y-%m-%d",out_format = "%d-%m-%y", delta = 2)
+        game_id = game['game_id']
+        predicted_result = logRegPredictGame(home_team = h_team, away_team = a_team, date = datum)
+        print(h_team + " - " + a_team + " will result as: " + str(predicted_result))
+        savePrediction(game_id,type='logreg', prediction = predicted_result)
 
-# a = predictGame("Toronto Maple Leafs", "Pittsburgh Penguins") # 2-4
-# b = predictGame("Washington Capitals", "Tampa Bay Lightning") # 5-1
-# c = predictGame("Dallas Stars", "San Jose Sharks")            # 4-5
-# d = predictGame("Seattle Kraken", "Minnesota Wild")           # 0-1
-
-# log_loss = []
-# predictions = []
-
-# log_loss.append(processGame(a, 0))
-# log_loss.append(processGame(b,1))
-# log_loss.append(processGame(c,0))
-# log_loss.append(processGame(d,0))
-
-# result = sum(log_loss) / len(log_loss)
-# print("Log loss for 4 games: " + str(result))
+def savePrediction(game_id, type, prediction):
+    basepath = path.dirname(__file__)
+    filepath = path.abspath(path.join(basepath, "..", "data", "Predictions.csv"))
+    df = pd.read_csv(filepath)
+    #find given game by id
+    row_index = df.index[df['game_id'] == game_id]
+    if type == 'logreg':
+        df.loc[row_index,'logreg_prediction'] = prediction
+    df.to_csv(filepath, index=False)
+#logRegPredictGame(home_team="Winnipeg Jets", away_team="Washington Capitals", date = "10-12-22")
+#logRegPredictSlate("2022-12-13")
