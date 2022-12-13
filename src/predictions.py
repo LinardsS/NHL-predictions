@@ -108,6 +108,4 @@ def scorePredictions():
     df2.loc[logreg_index,"correct_percentage"]= logreg_success_rate
     df2.to_csv(filepath, index=False)
 
-    
-
 scorePredictions()

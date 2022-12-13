@@ -1,22 +1,22 @@
 index,date,game_id,home_team,away_team,home_team_goals,away_team_goals,result,logreg_prediction
-447,2022-12-13,2022020448,Montreal Canadiens,Calgary Flames,,,,0.0
-448,2022-12-13,2022020449,Pittsburgh Penguins,Dallas Stars,,,,1.0
-449,2022-12-13,2022020450,New York Rangers,New Jersey Devils,,,,0.0
-450,2022-12-13,2022020451,Ottawa Senators,Anaheim Ducks,,,,1.0
-451,2022-12-13,2022020452,Minnesota Wild,Edmonton Oilers,,,,1.0
-452,2022-12-13,2022020453,St Louis Blues,Nashville Predators,,,,0.0
-453,2022-12-14,2022020454,Toronto Maple Leafs,Anaheim Ducks,,,,
-454,2022-12-14,2022020455,Florida Panthers,Columbus Blue Jackets,,,,
-455,2022-12-14,2022020456,New Jersey Devils,Dallas Stars,,,,
-456,2022-12-14,2022020457,Buffalo Sabres,Los Angeles Kings,,,,
-457,2022-12-14,2022020458,Boston Bruins,New York Islanders,,,,
-458,2022-12-14,2022020459,Tampa Bay Lightning,Seattle Kraken,,,,
-459,2022-12-14,2022020460,Detroit Red Wings,Carolina Hurricanes,,,,
-460,2022-12-14,2022020461,Nashville Predators,Edmonton Oilers,,,,
-461,2022-12-14,2022020462,Winnipeg Jets,Vegas Golden Knights,,,,
-462,2022-12-14,2022020463,Chicago Blackhawks,Washington Capitals,,,,
-463,2022-12-14,2022020464,Colorado Avalanche,Philadelphia Flyers,,,,
-464,2022-12-14,2022020465,San Jose Sharks,Arizona Coyotes,,,,
+447,2022-12-13,2022020448,Montreal Canadiens,Calgary Flames,2.0,1.0,1.0,0.0
+448,2022-12-13,2022020449,Pittsburgh Penguins,Dallas Stars,2.0,1.0,1.0,1.0
+449,2022-12-13,2022020450,New York Rangers,New Jersey Devils,4.0,3.0,1.0,0.0
+450,2022-12-13,2022020451,Ottawa Senators,Anaheim Ducks,3.0,0.0,1.0,1.0
+451,2022-12-13,2022020452,Minnesota Wild,Edmonton Oilers,2.0,1.0,1.0,1.0
+452,2022-12-13,2022020453,St Louis Blues,Nashville Predators,1.0,0.0,1.0,0.0
+453,2022-12-14,2022020454,Toronto Maple Leafs,Anaheim Ducks,,,,1.0
+454,2022-12-14,2022020455,Florida Panthers,Columbus Blue Jackets,,,,1.0
+455,2022-12-14,2022020456,New Jersey Devils,Dallas Stars,,,,1.0
+456,2022-12-14,2022020457,Buffalo Sabres,Los Angeles Kings,,,,1.0
+457,2022-12-14,2022020458,Boston Bruins,New York Islanders,,,,1.0
+458,2022-12-14,2022020459,Tampa Bay Lightning,Seattle Kraken,,,,1.0
+459,2022-12-14,2022020460,Detroit Red Wings,Carolina Hurricanes,,,,0.0
+460,2022-12-14,2022020461,Nashville Predators,Edmonton Oilers,,,,1.0
+461,2022-12-14,2022020462,Winnipeg Jets,Vegas Golden Knights,,,,1.0
+462,2022-12-14,2022020463,Chicago Blackhawks,Washington Capitals,,,,0.0
+463,2022-12-14,2022020464,Colorado Avalanche,Philadelphia Flyers,,,,1.0
+464,2022-12-14,2022020465,San Jose Sharks,Arizona Coyotes,,,,1.0
 465,2022-12-15,2022020466,Ottawa Senators,Montreal Canadiens,,,,
 466,2022-12-15,2022020467,Minnesota Wild,Detroit Red Wings,,,,
 467,2022-12-15,2022020468,Calgary Flames,Vancouver Canucks,,,,

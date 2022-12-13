@@ -128,6 +128,7 @@ def uploadResultsAndStats(start_date = None, end_date = None):
     #filename = "NHL 2022-23 Games TEST2.csv"
     #filepath = path.abspath(path.join(basepath, "..", "data", filename))
     df.to_csv(filepath, index=False)
+    df2.to_csv(filepath_predictions, index=False)
 
 def encoding(filepath = None):
     import chardet
