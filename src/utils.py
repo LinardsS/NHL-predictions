@@ -122,3 +122,10 @@ def convertDateStringFormat(date,in_format,out_format, delta = None):
         date = datetime.strptime(date, in_format)
         date = date-timedelta(days=delta)
         return date.strftime(out_format)
+
+def addColumnToCsv(filename):
+    #enter name of column in CSV yourself and this will add commas for new column in each row
+    basepath = path.dirname(__file__)
+    filepath = path.abspath(path.join(basepath, "..", "data", filename))
+    df = pd.read_csv(filepath)
+    df.to_csv(filepath, index=False)
