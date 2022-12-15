@@ -113,19 +113,17 @@ def scorePredictions():
 def scorePrediction(df, prediction_type):
     prediction_count = df.count().loc[prediction_type]
     correct_prediction_count = 0
-    counter = 0
     for row_index, row in df.iterrows():
-        if not pd.isna(row["result"]) and not pd.isna(row[prediction_type]):
-             if int(row["result"]) == int(row[prediction_type]):
+        if not pd.isna(row["result"]) and not pd.isna(row[prediction_type]): # ja abi netuksi - apstrada
+             if int(row["result"]) == int(row[prediction_type]): # ja rezultats sakrit ar prognozi, prognoze pareiza
                 correct_prediction_count += 1
         else:
-            counter += 1
-            if counter == prediction_count:
+            if pd.isna(row["result"]) and pd.isna(row[prediction_type]): #ja abi tuksi, neapstradat talak
                 break
-            continue
-        counter += 1
-        if counter == prediction_count:
-            break
+            if pd.isna(row["result"]): # rezultats tukss bet prognoze ir - beidz
+                break
+            if pd.isna(row[prediction_type]): #rezultats ir, bet prognoze tuksa - nenem vera so rindu
+                continue
     success_rate = correct_prediction_count / prediction_count
     return_dict = {}
     return_dict["correct_prediction_count"] = correct_prediction_count
