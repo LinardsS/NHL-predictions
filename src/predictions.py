@@ -52,8 +52,8 @@ def logRegPredictGame(home_team, away_team, date = None, no_point = False):
         model = loadModel(model_name)
         prediction = model.predict(df)
     return prediction[0]
-#will use logistic regression model on all games of a given slate
-def logRegPredictSlate(date):
+#will use all created models on all games of a given slate
+def predictSlate(date):
     #get games for given date
     basepath = path.dirname(__file__)
     filepath = path.abspath(path.join(basepath, "..", "data", "Predictions.csv"))
@@ -66,15 +66,20 @@ def logRegPredictSlate(date):
         datum   = game['date'] # need to convert from YYYY-MM-DD to DD-MM-YYYY for stats file retrieval
         datum   = utils.convertDateStringFormat(datum,in_format="%Y-%m-%d",out_format = "%d-%m-%y", delta = 2)
         game_id = game['game_id']
-        #predict using model that contains point%
+        #predict using logreg model that contains point%
         predicted_result = logRegPredictGame(home_team = h_team, away_team = a_team, date = datum, no_point=False)
-        print(h_team + " - " + a_team + " will result as: " + str(predicted_result))
+        print("Logreg: " + h_team + " - " + a_team + " will result as: " + str(predicted_result))
         savePrediction(game_id,type='logreg', prediction = predicted_result)
 
-        #predict using model that doesn't contain point%
+        #predict using logreg model that doesn't contain point%
         predicted_result_np = logRegPredictGame(home_team = h_team, away_team = a_team, date = datum, no_point=True)
-        print("No point%: " + h_team + " - " + a_team + " will result as: " + str(predicted_result))
+        print("No point%: " + h_team + " - " + a_team + " will result as: " + str(predicted_result_np))
         savePrediction(game_id,type='logreg_np', prediction = predicted_result_np)
+
+        predicted_result_dt = dtPredictGame(home_team = h_team, away_team = a_team, date = datum)
+        print("Dt: " + h_team + " - " + a_team + " will result as: " + str(predicted_result_dt))
+        savePrediction(game_id,type='dt', prediction = predicted_result_dt)
+        
 
 def savePrediction(game_id, type, prediction):
     basepath = path.dirname(__file__)
@@ -106,9 +111,17 @@ def scorePredictions():
     print("Logreg_np prediction count: ", logreg_np_prediction_count)
     print("Correct logreg_np prediction count: ", logreg_np_correct_prediction_count)
 
+    dt_score = scorePrediction(df, "dt_prediction")
+    dt_prediction_count = dt_score["prediction_count"]
+    dt_correct_prediction_count = dt_score["correct_prediction_count"]
+    dt_success_rate = dt_score["success_rate"]
+    print("Decision tree prediction count: ", dt_prediction_count)
+    print("Correct decision tree prediction count: ", dt_correct_prediction_count)
+
     #write prediction score statistics into scoring file
     writePredictionScore("logreg", logreg_prediction_count, logreg_correct_prediction_count, logreg_success_rate)
     writePredictionScore("logreg_np", logreg_np_prediction_count, logreg_np_correct_prediction_count, logreg_np_success_rate)  
+    writePredictionScore("dt", dt_prediction_count, dt_correct_prediction_count, dt_success_rate)  
     
 def scorePrediction(df, prediction_type):
     prediction_count = df.count().loc[prediction_type]
@@ -140,3 +153,19 @@ def writePredictionScore(prediction_type, pred_count, correct_pred_count, succes
     df.loc[index,"correct_predictions"] = correct_pred_count
     df.loc[index,"correct_percentage"]= success_rate
     df.to_csv(filepath, index=False)
+
+#decision tree
+def dtPredictGame(home_team, away_team, date = None):
+    if date is None:
+        date = utils.getTodaysDate()
+    game_dict = getTeamsStats(date, home_team, away_team)
+    home_team_dict = game_dict['home_team']
+    away_team_dict = game_dict['away_team']
+    df = utils.createGameDataframe(home_team_dict,away_team_dict)
+    #load decision tree model 
+    model_name = "dt_30-12-22"
+    model = loadModel(model_name)
+    #remove point% from df
+    df = df.drop(columns=['h_point%', 'a_point%'])
+    prediction = model.predict(df)
+    return prediction[0]
