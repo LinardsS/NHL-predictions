@@ -124,7 +124,9 @@ def scorePredictions():
     writePredictionScore("dt", dt_prediction_count, dt_correct_prediction_count, dt_success_rate)  
     
 def scorePrediction(df, prediction_type):
-    prediction_count = df.count().loc[prediction_type]
+    prediction_count = len(df.loc[
+    (df['result'].eq(1) | df['result'].eq(0)) & (df[prediction_type].eq(1) | df[prediction_type].eq(0))
+])
     correct_prediction_count = 0
     for row_index, row in df.iterrows():
         if not pd.isna(row["result"]) and not pd.isna(row[prediction_type]): # ja abi netuksi - apstrada

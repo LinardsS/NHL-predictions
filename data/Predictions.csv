@@ -122,28 +122,28 @@ index,date,game_id,home_team,away_team,home_team_goals,away_team_goals,result,lo
 570,2022-12-30,2022020571,Colorado Avalanche,Los Angeles Kings,4.0,5.0,0.0,1.0,1.0,
 571,2022-12-30,2022020572,Arizona Coyotes,Toronto Maple Leafs,6.0,3.0,1.0,0.0,0.0,
 572,2022-12-30,2022020573,San Jose Sharks,Philadelphia Flyers,3.0,4.0,0.0,1.0,1.0,
-573,2022-12-30,2022020574,Anaheim Ducks,Nashville Predators,,,,0.0,0.0,0.0
-574,2022-12-31,2022020576,Pittsburgh Penguins,New Jersey Devils,,,,0.0,0.0,0.0
-575,2022-12-31,2022020575,Carolina Hurricanes,Florida Panthers,,,,1.0,1.0,1.0
-576,2022-12-31,2022020577,Seattle Kraken,Edmonton Oilers,,,,1.0,1.0,1.0
-577,2022-12-31,2022020578,Boston Bruins,Buffalo Sabres,,,,1.0,1.0,1.0
-578,2022-12-31,2022020579,Vegas Golden Knights,Nashville Predators,,,,1.0,1.0,1.0
-579,2022-12-31,2022020581,Los Angeles Kings,Philadelphia Flyers,,,,1.0,1.0,1.0
-580,2022-12-31,2022020580,Washington Capitals,Montreal Canadiens,,,,1.0,1.0,1.0
-581,2022-12-31,2022020582,Tampa Bay Lightning,Arizona Coyotes,,,,1.0,1.0,1.0
-582,2022-12-31,2022020589,St Louis Blues,Minnesota Wild,,,,0.0,0.0,1.0
-583,2023-01-01,2022020585,Colorado Avalanche,Toronto Maple Leafs,,,,,,
-584,2023-01-01,2022020583,Columbus Blue Jackets,Chicago Blackhawks,,,,,,
-585,2023-01-01,2022020584,Detroit Red Wings,Ottawa Senators,,,,,,
-586,2023-01-01,2022020586,Dallas Stars,San Jose Sharks,,,,,,
-587,2023-01-01,2022020587,Calgary Flames,Vancouver Canucks,,,,,,
-588,2023-01-01,2022020588,Edmonton Oilers,Winnipeg Jets,,,,,,
-589,2023-01-01,2022020590,New Jersey Devils,Carolina Hurricanes,,,,,,
-590,2023-01-01,2022020591,Florida Panthers,New York Rangers,,,,,,
-591,2023-01-02,2022020593,Chicago Blackhawks,San Jose Sharks,,,,,,
-592,2023-01-02,2022020592,Ottawa Senators,Buffalo Sabres,,,,,,
-593,2023-01-02,2022020594,Seattle Kraken,New York Islanders,,,,,,
-594,2023-01-02,2022020595,Boston Bruins,Pittsburgh Penguins,,,,,,
+573,2022-12-30,2022020574,Anaheim Ducks,Nashville Predators,1.0,6.0,0.0,0.0,0.0,0.0
+574,2022-12-31,2022020576,Pittsburgh Penguins,New Jersey Devils,2.0,4.0,0.0,0.0,0.0,0.0
+575,2022-12-31,2022020575,Carolina Hurricanes,Florida Panthers,4.0,0.0,1.0,1.0,1.0,1.0
+576,2022-12-31,2022020577,Seattle Kraken,Edmonton Oilers,2.0,7.0,0.0,1.0,1.0,1.0
+577,2022-12-31,2022020578,Boston Bruins,Buffalo Sabres,3.0,4.0,0.0,1.0,1.0,1.0
+578,2022-12-31,2022020579,Vegas Golden Knights,Nashville Predators,5.0,4.0,1.0,1.0,1.0,1.0
+579,2022-12-31,2022020581,Los Angeles Kings,Philadelphia Flyers,2.0,4.0,0.0,1.0,1.0,1.0
+580,2022-12-31,2022020580,Washington Capitals,Montreal Canadiens,9.0,2.0,1.0,1.0,1.0,1.0
+581,2022-12-31,2022020582,Tampa Bay Lightning,Arizona Coyotes,5.0,3.0,1.0,1.0,1.0,1.0
+582,2022-12-31,2022020589,St Louis Blues,Minnesota Wild,2.0,5.0,0.0,0.0,0.0,1.0
+583,2023-01-01,2022020585,Colorado Avalanche,Toronto Maple Leafs,2.0,6.0,0.0,1.0,1.0,1.0
+584,2023-01-01,2022020583,Columbus Blue Jackets,Chicago Blackhawks,4.0,1.0,1.0,0.0,0.0,0.0
+585,2023-01-01,2022020584,Detroit Red Wings,Ottawa Senators,4.0,2.0,1.0,0.0,0.0,1.0
+586,2023-01-01,2022020586,Dallas Stars,San Jose Sharks,5.0,2.0,1.0,1.0,1.0,1.0
+587,2023-01-01,2022020587,Calgary Flames,Vancouver Canucks,3.0,2.0,1.0,1.0,1.0,1.0
+588,2023-01-01,2022020588,Edmonton Oilers,Winnipeg Jets,1.0,2.0,0.0,0.0,0.0,1.0
+589,2023-01-01,2022020590,New Jersey Devils,Carolina Hurricanes,,,,1.0,1.0,0.0
+590,2023-01-01,2022020591,Florida Panthers,New York Rangers,,,,1.0,1.0,1.0
+591,2023-01-02,2022020593,Chicago Blackhawks,San Jose Sharks,,,,0.0,0.0,0.0
+592,2023-01-02,2022020592,Ottawa Senators,Buffalo Sabres,,,,1.0,1.0,0.0
+593,2023-01-02,2022020594,Seattle Kraken,New York Islanders,,,,0.0,0.0,1.0
+594,2023-01-02,2022020595,Boston Bruins,Pittsburgh Penguins,,,,1.0,1.0,1.0
 595,2023-01-03,2022020596,Colorado Avalanche,Vegas Golden Knights,,,,,,
 596,2023-01-03,2022020597,Anaheim Ducks,Philadelphia Flyers,,,,,,
 597,2023-01-04,2022020598,Florida Panthers,Arizona Coyotes,,,,,,
