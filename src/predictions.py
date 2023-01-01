@@ -76,9 +76,15 @@ def predictSlate(date):
         print("No point%: " + h_team + " - " + a_team + " will result as: " + str(predicted_result_np))
         savePrediction(game_id,type='logreg_np', prediction = predicted_result_np)
 
+        #predict using decision tree model
         predicted_result_dt = dtPredictGame(home_team = h_team, away_team = a_team, date = datum)
         print("Dt: " + h_team + " - " + a_team + " will result as: " + str(predicted_result_dt))
         savePrediction(game_id,type='dt', prediction = predicted_result_dt)
+
+        #predict using random forest(20 estimators) model
+        predicted_result_rf = rfPredictGame(home_team = h_team, away_team = a_team, date = datum)
+        print("Rf: " + h_team + " - " + a_team + " will result as: " + str(predicted_result_dt))
+        savePrediction(game_id,type='rf', prediction = predicted_result_rf)
         
 
 def savePrediction(game_id, type, prediction):
@@ -118,10 +124,18 @@ def scorePredictions():
     print("Decision tree prediction count: ", dt_prediction_count)
     print("Correct decision tree prediction count: ", dt_correct_prediction_count)
 
+    rf_score = scorePrediction(df, "rf_prediction")
+    rf_prediction_count = rf_score["prediction_count"]
+    rf_correct_prediction_count = rf_score["correct_prediction_count"]
+    rf_success_rate = rf_score["success_rate"]
+    print("Random forest prediction count: ", rf_prediction_count)
+    print("Correct random forest prediction count: ", rf_correct_prediction_count)
+
     #write prediction score statistics into scoring file
     writePredictionScore("logreg", logreg_prediction_count, logreg_correct_prediction_count, logreg_success_rate)
     writePredictionScore("logreg_np", logreg_np_prediction_count, logreg_np_correct_prediction_count, logreg_np_success_rate)  
-    writePredictionScore("dt", dt_prediction_count, dt_correct_prediction_count, dt_success_rate)  
+    writePredictionScore("dt", dt_prediction_count, dt_correct_prediction_count, dt_success_rate) 
+    writePredictionScore("rf", rf_prediction_count, rf_correct_prediction_count, rf_success_rate) 
     
 def scorePrediction(df, prediction_type):
     prediction_count = len(df.loc[
@@ -166,6 +180,22 @@ def dtPredictGame(home_team, away_team, date = None):
     df = utils.createGameDataframe(home_team_dict,away_team_dict)
     #load decision tree model 
     model_name = "dt_30-12-22"
+    model = loadModel(model_name)
+    #remove point% from df
+    df = df.drop(columns=['h_point%', 'a_point%'])
+    prediction = model.predict(df)
+    return prediction[0]
+
+#random forest
+def rfPredictGame(home_team, away_team, date = None):
+    if date is None:
+        date = utils.getTodaysDate()
+    game_dict = getTeamsStats(date, home_team, away_team)
+    home_team_dict = game_dict['home_team']
+    away_team_dict = game_dict['away_team']
+    df = utils.createGameDataframe(home_team_dict,away_team_dict)
+    #load random forest with 20 estimators model 
+    model_name = "rf_estimators20_01-01-23"
     model = loadModel(model_name)
     #remove point% from df
     df = df.drop(columns=['h_point%', 'a_point%'])

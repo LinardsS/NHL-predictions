@@ -1,0 +1,16 @@
+----ACCURACY------
+0.6283185840707964        
+----CONFUSION MATRIX------
+[[113  61]
+ [ 65 100]]
+----CLASSIFICATION REPORT------
+              precision    recall  f1-score   support
+
+        Loss       0.63      0.65      0.64       174
+         Win       0.62      0.61      0.61       165
+
+    accuracy                           0.63       339
+   macro avg       0.63      0.63      0.63       339
+weighted avg       0.63      0.63      0.63       339
+
+Elapsed time to compute the importances: 0.005 seconds

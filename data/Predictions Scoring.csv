@@ -2,3 +2,4 @@ model,games_predicted,correct_predictions,correct_percentage
 logreg,139.0,81.0,0.5827338129496403
 logreg_np,133.0,79.0,0.5939849624060151
 dt,16.0,9.0,0.5625
+rf,0,0,0
