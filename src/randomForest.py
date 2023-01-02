@@ -17,8 +17,9 @@ def test_rf():
     filepath = path.abspath(path.join(basepath, "..", "data", filename))
     df = pd.read_csv(filepath)
     train, test = train_test_split(df,test_size = 0.2, random_state=7)
-    estimators = 25
-    rf = RandomForestClassifier(n_estimators=estimators)
+    estimators = 20
+    pruning = 0.0
+    rf = RandomForestClassifier(n_estimators=estimators, ccp_alpha=pruning)
 
     rf = rf.fit(train[['h_cf%']+['h_ff%']+['h_sf%']+['h_gf%']+['h_xgf%']+['h_scf%']+['h_scsf%']+['h_scgf%']+['h_scsh%']+['h_scsv%']+['h_hdsf%']+['h_hdgf%']+['h_hdsh%']+['h_hdsv%']+['h_mdsf%']+['h_mdgf%']+['h_mdsh%']+['h_mdsv%']+['h_ldsf%']+['h_ldgf%']+['h_ldsh%']+['h_ldsv%']+['h_sh%']+['h_sv%']+['h_PDO']+['a_cf%']+['a_ff%']+['a_sf%']+['a_gf%']+['a_xgf%']+['a_scf%']+['a_scsf%']+['a_scgf%']+['a_scsh%']+['a_scsv%']+['a_hdsf%']+['a_hdgf%']+['a_hdsh%']+['a_hdsv%']+['a_mdsf%']+['a_mdgf%']+['a_mdsh%']+['a_mdsv%']+['a_ldsf%']+['a_ldgf%']+['a_ldsh%']+['a_ldsv%']+['a_sh%']+['a_sv%']+['a_PDO']],train[['result']].values.ravel())
     
@@ -57,14 +58,14 @@ def test_rf():
 
     fig, ax = plt.subplots()
     forest_importances.plot.bar(yerr=std, ax=ax)
-    ax.set_title("Feature importances using MDI")
-    ax.set_ylabel("Mean decrease in impurity")
+    ax.set_title("Parametru nozīmīgums, izmantojot MDI")
+    ax.set_ylabel("Vidējais samazinājums t.s. piemaisījumos")
     fig.tight_layout()
     plt.show()
 
     #Save model
     datum = utils.getTodaysDate(format = "%d-%m-%y",backdate = None)
-    filename = 'rf_estimators' + str(estimators) + '_' + datum + '.sav'
+    filename = 'rf_estimators_' + str(estimators) + '_pruning_' + str(pruning) + '_' + datum + '.sav'
     print(filename)
     pickle.dump(rf, open(filename, 'wb'))
 
