@@ -138,14 +138,14 @@ index,date,game_id,home_team,away_team,home_team_goals,away_team_goals,result,lo
 586,2023-01-01,2022020586,Dallas Stars,San Jose Sharks,5.0,2.0,1.0,1.0,1.0,1.0,
 587,2023-01-01,2022020587,Calgary Flames,Vancouver Canucks,3.0,2.0,1.0,1.0,1.0,1.0,
 588,2023-01-01,2022020588,Edmonton Oilers,Winnipeg Jets,1.0,2.0,0.0,0.0,0.0,1.0,
-589,2023-01-01,2022020590,New Jersey Devils,Carolina Hurricanes,,,,1.0,1.0,0.0,1.0
-590,2023-01-01,2022020591,Florida Panthers,New York Rangers,,,,1.0,1.0,1.0,1.0
-591,2023-01-02,2022020593,Chicago Blackhawks,San Jose Sharks,,,,0.0,0.0,0.0,0.0
-592,2023-01-02,2022020592,Ottawa Senators,Buffalo Sabres,,,,1.0,1.0,0.0,1.0
-593,2023-01-02,2022020594,Seattle Kraken,New York Islanders,,,,0.0,0.0,1.0,1.0
+589,2023-01-01,2022020590,New Jersey Devils,Carolina Hurricanes,4.0,5.0,0.0,1.0,1.0,0.0,1.0
+590,2023-01-01,2022020591,Florida Panthers,New York Rangers,3.0,5.0,0.0,1.0,1.0,1.0,1.0
+591,2023-01-02,2022020593,Chicago Blackhawks,San Jose Sharks,2.0,5.0,0.0,0.0,0.0,0.0,0.0
+592,2023-01-02,2022020592,Ottawa Senators,Buffalo Sabres,3.0,1.0,1.0,1.0,1.0,0.0,1.0
+593,2023-01-02,2022020594,Seattle Kraken,New York Islanders,4.0,1.0,1.0,0.0,0.0,1.0,1.0
 594,2023-01-02,2022020595,Boston Bruins,Pittsburgh Penguins,,,,1.0,1.0,1.0,1.0
-595,2023-01-03,2022020596,Colorado Avalanche,Vegas Golden Knights,,,,,,,
-596,2023-01-03,2022020597,Anaheim Ducks,Philadelphia Flyers,,,,,,,
+595,2023-01-03,2022020596,Colorado Avalanche,Vegas Golden Knights,,,,1.0,1.0,1.0,0.0
+596,2023-01-03,2022020597,Anaheim Ducks,Philadelphia Flyers,,,,0.0,0.0,0.0,0.0
 597,2023-01-04,2022020598,Florida Panthers,Arizona Coyotes,,,,,,,
 598,2023-01-04,2022020599,Washington Capitals,Buffalo Sabres,,,,,,,
 599,2023-01-04,2022020600,New York Rangers,Carolina Hurricanes,,,,,,,
