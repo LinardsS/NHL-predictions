@@ -1,0 +1,69 @@
+2023-01-02 Boston Bruins Pittsburgh Penguins
+2023-01-03 Colorado Avalanche Vegas Golden Knights
+2023-01-03 Anaheim Ducks Philadelphia Flyers
+Logreg prediction count:  147
+Correct logreg prediction count:  85
+Logreg_np prediction count:  141
+Correct logreg_np prediction count:  83
+Decision tree prediction count:  24
+Correct decision tree prediction count:  14
+Random forest prediction count:  8
+Correct random forest prediction count:  6
+     index        date     game_id  ... logreg_np_prediction dt_prediction  rf_prediction
+147    597  2023-01-04  2022020598  ...                  NaN           NaN            NaN
+148    598  2023-01-04  2022020599  ...                  NaN           NaN            NaN
+149    599  2023-01-04  2022020600  ...                  NaN           NaN            NaN
+150    600  2023-01-04  2022020601  ...                  NaN           NaN            NaN
+151    601  2023-01-04  2022020602  ...                  NaN           NaN            NaN
+152    602  2023-01-04  2022020603  ...                  NaN           NaN            NaN
+153    603  2023-01-04  2022020604  ...                  NaN           NaN            NaN
+154    604  2023-01-04  2022020605  ...                  NaN           NaN            NaN
+155    605  2023-01-04  2022020606  ...                  NaN           NaN            NaN
+156    606  2023-01-04  2022020607  ...                  NaN           NaN            NaN
+157    607  2023-01-04  2022020608  ...                  NaN           NaN            NaN
+
+[11 rows x 12 columns]
+Logreg: Florida Panthers - Arizona Coyotes will result as: 1.0
+No point%: Florida Panthers - Arizona Coyotes will result as: 1.0
+Dt: Florida Panthers - Arizona Coyotes will result as: 1.0
+Rf: Florida Panthers - Arizona Coyotes will result as: 1.0
+Logreg: Washington Capitals - Buffalo Sabres will result as: 1.0
+No point%: Washington Capitals - Buffalo Sabres will result as: 1.0
+Dt: Washington Capitals - Buffalo Sabres will result as: 1.0
+Rf: Washington Capitals - Buffalo Sabres will result as: 1.0
+Logreg: New York Rangers - Carolina Hurricanes will result as: 0.0
+No point%: New York Rangers - Carolina Hurricanes will result as: 0.0
+Dt: New York Rangers - Carolina Hurricanes will result as: 0.0
+Rf: New York Rangers - Carolina Hurricanes will result as: 0.0
+Logreg: Ottawa Senators - Columbus Blue Jackets will result as: 1.0
+No point%: Ottawa Senators - Columbus Blue Jackets will result as: 1.0
+Dt: Ottawa Senators - Columbus Blue Jackets will result as: 0.0
+Rf: Ottawa Senators - Columbus Blue Jackets will result as: 0.0
+Logreg: Toronto Maple Leafs - St Louis Blues will result as: 1.0
+No point%: Toronto Maple Leafs - St Louis Blues will result as: 1.0
+Dt: Toronto Maple Leafs - St Louis Blues will result as: 1.0
+Rf: Toronto Maple Leafs - St Louis Blues will result as: 1.0
+Logreg: Winnipeg Jets - Calgary Flames will result as: 1.0
+No point%: Winnipeg Jets - Calgary Flames will result as: 1.0
+Dt: Winnipeg Jets - Calgary Flames will result as: 1.0
+Rf: Winnipeg Jets - Calgary Flames will result as: 1.0
+Logreg: Nashville Predators - Montreal Canadiens will result as: 1.0
+No point%: Nashville Predators - Montreal Canadiens will result as: 1.0
+Dt: Nashville Predators - Montreal Canadiens will result as: 1.0
+Rf: Nashville Predators - Montreal Canadiens will result as: 1.0
+Logreg: Chicago Blackhawks - Tampa Bay Lightning will result as: 0.0
+No point%: Chicago Blackhawks - Tampa Bay Lightning will result as: 0.0
+Dt: Chicago Blackhawks - Tampa Bay Lightning will result as: 0.0
+Rf: Chicago Blackhawks - Tampa Bay Lightning will result as: 0.0
+Logreg: Edmonton Oilers - Seattle Kraken will result as: 1.0
+No point%: Edmonton Oilers - Seattle Kraken will result as: 1.0
+Dt: Edmonton Oilers - Seattle Kraken will result as: 1.0
+Rf: Edmonton Oilers - Seattle Kraken will result as: 1.0
+Logreg: Vancouver Canucks - New York Islanders will result as: 0.0
+No point%: Vancouver Canucks - New York Islanders will result as: 0.0
+Dt: Vancouver Canucks - New York Islanders will result as: 1.0
+Rf: Vancouver Canucks - New York Islanders will result as: 1.0
+Logreg: Los Angeles Kings - Dallas Stars will result as: 0.0
+No point%: Los Angeles Kings - Dallas Stars will result as: 0.0
+Dt: Los Angeles Kings - Dallas Stars will result as: 1.0
+Rf: Los Angeles Kings - Dallas Stars will result as: 1.0

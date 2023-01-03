@@ -143,20 +143,20 @@ index,date,game_id,home_team,away_team,home_team_goals,away_team_goals,result,lo
 591,2023-01-02,2022020593,Chicago Blackhawks,San Jose Sharks,2.0,5.0,0.0,0.0,0.0,0.0,0.0
 592,2023-01-02,2022020592,Ottawa Senators,Buffalo Sabres,3.0,1.0,1.0,1.0,1.0,0.0,1.0
 593,2023-01-02,2022020594,Seattle Kraken,New York Islanders,4.0,1.0,1.0,0.0,0.0,1.0,1.0
-594,2023-01-02,2022020595,Boston Bruins,Pittsburgh Penguins,,,,1.0,1.0,1.0,1.0
-595,2023-01-03,2022020596,Colorado Avalanche,Vegas Golden Knights,,,,1.0,1.0,1.0,0.0
-596,2023-01-03,2022020597,Anaheim Ducks,Philadelphia Flyers,,,,0.0,0.0,0.0,0.0
-597,2023-01-04,2022020598,Florida Panthers,Arizona Coyotes,,,,,,,
-598,2023-01-04,2022020599,Washington Capitals,Buffalo Sabres,,,,,,,
-599,2023-01-04,2022020600,New York Rangers,Carolina Hurricanes,,,,,,,
-600,2023-01-04,2022020601,Ottawa Senators,Columbus Blue Jackets,,,,,,,
-601,2023-01-04,2022020602,Toronto Maple Leafs,St Louis Blues,,,,,,,
-602,2023-01-04,2022020603,Winnipeg Jets,Calgary Flames,,,,,,,
-603,2023-01-04,2022020604,Nashville Predators,Montreal Canadiens,,,,,,,
-604,2023-01-04,2022020605,Chicago Blackhawks,Tampa Bay Lightning,,,,,,,
-605,2023-01-04,2022020606,Edmonton Oilers,Seattle Kraken,,,,,,,
-606,2023-01-04,2022020607,Vancouver Canucks,New York Islanders,,,,,,,
-607,2023-01-04,2022020608,Los Angeles Kings,Dallas Stars,,,,,,,
+594,2023-01-02,2022020595,Boston Bruins,Pittsburgh Penguins,2.0,1.0,1.0,1.0,1.0,1.0,1.0
+595,2023-01-03,2022020596,Colorado Avalanche,Vegas Golden Knights,2.0,3.0,0.0,1.0,1.0,1.0,0.0
+596,2023-01-03,2022020597,Anaheim Ducks,Philadelphia Flyers,1.0,4.0,0.0,0.0,0.0,0.0,0.0
+597,2023-01-04,2022020598,Florida Panthers,Arizona Coyotes,,,,1.0,1.0,1.0,1.0
+598,2023-01-04,2022020599,Washington Capitals,Buffalo Sabres,,,,1.0,1.0,1.0,0.0
+599,2023-01-04,2022020600,New York Rangers,Carolina Hurricanes,,,,0.0,0.0,0.0,0.0
+600,2023-01-04,2022020601,Ottawa Senators,Columbus Blue Jackets,,,,1.0,1.0,0.0,0.0
+601,2023-01-04,2022020602,Toronto Maple Leafs,St Louis Blues,,,,1.0,1.0,1.0,1.0
+602,2023-01-04,2022020603,Winnipeg Jets,Calgary Flames,,,,1.0,1.0,1.0,1.0
+603,2023-01-04,2022020604,Nashville Predators,Montreal Canadiens,,,,1.0,1.0,1.0,0.0
+604,2023-01-04,2022020605,Chicago Blackhawks,Tampa Bay Lightning,,,,0.0,0.0,0.0,1.0
+605,2023-01-04,2022020606,Edmonton Oilers,Seattle Kraken,,,,1.0,1.0,1.0,0.0
+606,2023-01-04,2022020607,Vancouver Canucks,New York Islanders,,,,0.0,0.0,1.0,1.0
+607,2023-01-04,2022020608,Los Angeles Kings,Dallas Stars,,,,0.0,0.0,1.0,0.0
 608,2023-01-05,2022020609,Detroit Red Wings,New Jersey Devils,,,,,,,
 609,2023-01-05,2022020610,Minnesota Wild,Tampa Bay Lightning,,,,,,,
 610,2023-01-05,2022020611,Anaheim Ducks,Dallas Stars,,,,,,,
