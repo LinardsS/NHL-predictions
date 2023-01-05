@@ -59,7 +59,6 @@ def predictSlate(date):
     filepath = path.abspath(path.join(basepath, "..", "data", "Predictions.csv"))
     df = pd.read_csv(filepath)
     games = df.loc[df['date'] == date]
-    print(games)
     for game_index, game in games.iterrows():
         h_team  = game['home_team']
         a_team  = game['away_team']

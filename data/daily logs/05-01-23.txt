@@ -1,0 +1,64 @@
+2023-01-05 Detroit Red Wings New Jersey Devils
+2023-01-05 Minnesota Wild Tampa Bay Lightning
+2023-01-05 Anaheim Ducks Dallas Stars
+Logreg prediction count:  161
+Correct logreg prediction count:  92
+Logreg_np prediction count:  155
+Correct logreg_np prediction count:  90
+Decision tree prediction count:  38
+Correct decision tree prediction count:  21
+Random forest prediction count:  22
+Correct random forest prediction count:  11
+     index        date     game_id  ... logreg_np_prediction dt_prediction  rf_prediction
+161    611  2023-01-06  2022020612  ...                  NaN           NaN            NaN
+162    612  2023-01-06  2022020613  ...                  NaN           NaN            NaN
+163    613  2023-01-06  2022020614  ...                  NaN           NaN            NaN
+164    614  2023-01-06  2022020615  ...                  NaN           NaN            NaN
+165    615  2023-01-06  2022020616  ...                  NaN           NaN            NaN
+166    616  2023-01-06  2022020617  ...                  NaN           NaN            NaN
+167    617  2023-01-06  2022020618  ...                  NaN           NaN            NaN
+168    618  2023-01-06  2022020619  ...                  NaN           NaN            NaN
+169    619  2023-01-06  2022020620  ...                  NaN           NaN            NaN
+170    620  2023-01-06  2022020621  ...                  NaN           NaN            NaN
+
+[10 rows x 12 columns]
+Logreg: Philadelphia Flyers - Arizona Coyotes will result as: 0.0
+No point%: Philadelphia Flyers - Arizona Coyotes will result as: 0.0
+Dt: Philadelphia Flyers - Arizona Coyotes will result as: 1.0
+Rf: Philadelphia Flyers - Arizona Coyotes will result as: 1.0
+Logreg: Montreal Canadiens - New York Rangers will result as: 0.0
+No point%: Montreal Canadiens - New York Rangers will result as: 0.0
+Dt: Montreal Canadiens - New York Rangers will result as: 0.0
+Rf: Montreal Canadiens - New York Rangers will result as: 0.0
+Logreg: Carolina Hurricanes - Nashville Predators will result as: 1.0
+No point%: Carolina Hurricanes - Nashville Predators will result as: 1.0
+Dt: Carolina Hurricanes - Nashville Predators will result as: 1.0
+Rf: Carolina Hurricanes - Nashville Predators will result as: 1.0
+Logreg: Toronto Maple Leafs - Seattle Kraken will result as: 1.0
+No point%: Toronto Maple Leafs - Seattle Kraken will result as: 1.0
+Dt: Toronto Maple Leafs - Seattle Kraken will result as: 1.0
+Rf: Toronto Maple Leafs - Seattle Kraken will result as: 1.0
+Logreg: New Jersey Devils - St Louis Blues will result as: 1.0
+No point%: New Jersey Devils - St Louis Blues will result as: 1.0
+Dt: New Jersey Devils - St Louis Blues will result as: 1.0
+Rf: New Jersey Devils - St Louis Blues will result as: 1.0
+Logreg: Columbus Blue Jackets - Washington Capitals will result as: 0.0
+No point%: Columbus Blue Jackets - Washington Capitals will result as: 0.0
+Dt: Columbus Blue Jackets - Washington Capitals will result as: 0.0
+Rf: Columbus Blue Jackets - Washington Capitals will result as: 0.0
+Logreg: Edmonton Oilers - New York Islanders will result as: 0.0
+No point%: Edmonton Oilers - New York Islanders will result as: 0.0
+Dt: Edmonton Oilers - New York Islanders will result as: 1.0
+Rf: Edmonton Oilers - New York Islanders will result as: 1.0
+Logreg: Vancouver Canucks - Colorado Avalanche will result as: 0.0
+No point%: Vancouver Canucks - Colorado Avalanche will result as: 0.0
+Dt: Vancouver Canucks - Colorado Avalanche will result as: 1.0
+Rf: Vancouver Canucks - Colorado Avalanche will result as: 1.0
+Logreg: Vegas Golden Knights - Pittsburgh Penguins will result as: 1.0
+No point%: Vegas Golden Knights - Pittsburgh Penguins will result as: 1.0
+Dt: Vegas Golden Knights - Pittsburgh Penguins will result as: 1.0
+Rf: Vegas Golden Knights - Pittsburgh Penguins will result as: 1.0
+Logreg: Los Angeles Kings - Boston Bruins will result as: 0.0
+No point%: Los Angeles Kings - Boston Bruins will result as: 0.0
+Dt: Los Angeles Kings - Boston Bruins will result as: 0.0
+Rf: Los Angeles Kings - Boston Bruins will result as: 0.0

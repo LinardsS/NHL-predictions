@@ -1,0 +1,37 @@
+2023-01-04 Florida Panthers Arizona Coyotes
+2023-01-04 Washington Capitals Buffalo Sabres
+2023-01-04 New York Rangers Carolina Hurricanes
+2023-01-04 Ottawa Senators Columbus Blue Jackets
+2023-01-04 Toronto Maple Leafs St Louis Blues
+2023-01-04 Winnipeg Jets Calgary Flames
+2023-01-04 Nashville Predators Montreal Canadiens
+2023-01-04 Chicago Blackhawks Tampa Bay Lightning
+2023-01-04 Edmonton Oilers Seattle Kraken
+2023-01-04 Vancouver Canucks New York Islanders
+2023-01-04 Los Angeles Kings Dallas Stars
+Logreg prediction count:  158
+Correct logreg prediction count:  91
+Logreg_np prediction count:  152
+Correct logreg_np prediction count:  89
+Decision tree prediction count:  35
+Correct decision tree prediction count:  19
+Random forest prediction count:  19
+Correct random forest prediction count:  10
+     index        date     game_id  ... logreg_np_prediction dt_prediction  rf_prediction
+158    608  2023-01-05  2022020609  ...                  NaN           NaN            NaN
+159    609  2023-01-05  2022020610  ...                  NaN           NaN            NaN
+160    610  2023-01-05  2022020611  ...                  NaN           NaN            NaN
+
+[3 rows x 12 columns]
+Logreg: Detroit Red Wings - New Jersey Devils will result as: 0.0
+No point%: Detroit Red Wings - New Jersey Devils will result as: 0.0
+Dt: Detroit Red Wings - New Jersey Devils will result as: 0.0
+Rf: Detroit Red Wings - New Jersey Devils will result as: 0.0
+Logreg: Minnesota Wild - Tampa Bay Lightning will result as: 0.0
+No point%: Minnesota Wild - Tampa Bay Lightning will result as: 0.0
+Dt: Minnesota Wild - Tampa Bay Lightning will result as: 1.0
+Rf: Minnesota Wild - Tampa Bay Lightning will result as: 1.0
+Logreg: Anaheim Ducks - Dallas Stars will result as: 0.0
+No point%: Anaheim Ducks - Dallas Stars will result as: 0.0
+Dt: Anaheim Ducks - Dallas Stars will result as: 0.0
+Rf: Anaheim Ducks - Dallas Stars will result as: 0.0
