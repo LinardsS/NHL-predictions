@@ -45,8 +45,10 @@ def test():
     filename = 'log_reg_NO_POINT_PERCENTAGE_' + datum + '.sav'
     pickle.dump(logreg, open(filename, 'wb'))
 def loadModel(model_name):
+    basepath = path.dirname(__file__)
     filename = model_name + ".sav"
-    loaded_model = pickle.load(open(filename, 'rb'))
+    filepath = path.abspath(path.join(basepath, filename))
+    loaded_model = pickle.load(open(filepath, 'rb'))
     return loaded_model
 # model = loadModel("log_reg_12-12-22_2")
 # prediction = model.predict()

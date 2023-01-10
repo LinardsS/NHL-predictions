@@ -1,0 +1,28 @@
+2023-01-08 Winnipeg Jets Vancouver Canucks
+2023-01-08 Dallas Stars Florida Panthers
+2023-01-08 Washington Capitals Columbus Blue Jackets
+2023-01-09 Arizona Coyotes Pittsburgh Penguins
+2023-01-09 Chicago Blackhawks Calgary Flames
+2023-01-09 Minnesota Wild St Louis Blues
+2023-01-09 Philadelphia Flyers Toronto Maple Leafs
+2023-01-09 Anaheim Ducks Boston Bruins
+Logreg prediction count:  194
+Correct logreg prediction count:  107
+Logreg_np prediction count:  188
+Correct logreg_np prediction count:  105
+Decision tree prediction count:  71
+Correct decision tree prediction count:  40
+Random forest prediction count:  55
+Correct random forest prediction count:  24
+Logreg: Ottawa Senators - Nashville Predators will result as: 1.0
+No point%: Ottawa Senators - Nashville Predators will result as: 1.0
+Dt: Ottawa Senators - Nashville Predators will result as: 0.0
+Rf: Ottawa Senators - Nashville Predators will result as: 0.0
+Logreg: Montreal Canadiens - Seattle Kraken will result as: 0.0
+No point%: Montreal Canadiens - Seattle Kraken will result as: 0.0
+Dt: Montreal Canadiens - Seattle Kraken will result as: 0.0
+Rf: Montreal Canadiens - Seattle Kraken will result as: 0.0
+Logreg: Los Angeles Kings - Edmonton Oilers will result as: 0.0
+No point%: Los Angeles Kings - Edmonton Oilers will result as: 0.0
+Dt: Los Angeles Kings - Edmonton Oilers will result as: 1.0
+Rf: Los Angeles Kings - Edmonton Oilers will result as: 1.0

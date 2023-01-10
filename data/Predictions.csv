@@ -160,52 +160,52 @@ index,date,game_id,home_team,away_team,home_team_goals,away_team_goals,result,lo
 608,2023-01-05,2022020609,Detroit Red Wings,New Jersey Devils,1.0,5.0,0.0,0.0,0.0,0.0,0.0
 609,2023-01-05,2022020610,Minnesota Wild,Tampa Bay Lightning,5.0,1.0,1.0,0.0,0.0,1.0,0.0
 610,2023-01-05,2022020611,Anaheim Ducks,Dallas Stars,2.0,0.0,1.0,0.0,0.0,0.0,0.0
-611,2023-01-06,2022020612,Philadelphia Flyers,Arizona Coyotes,,,,0.0,0.0,1.0,0.0
-612,2023-01-06,2022020613,Montreal Canadiens,New York Rangers,,,,0.0,0.0,0.0,1.0
-613,2023-01-06,2022020614,Carolina Hurricanes,Nashville Predators,,,,1.0,1.0,1.0,1.0
-614,2023-01-06,2022020615,Toronto Maple Leafs,Seattle Kraken,,,,1.0,1.0,1.0,1.0
-615,2023-01-06,2022020616,New Jersey Devils,St Louis Blues,,,,1.0,1.0,1.0,1.0
-616,2023-01-06,2022020617,Columbus Blue Jackets,Washington Capitals,,,,0.0,0.0,0.0,0.0
-617,2023-01-06,2022020618,Edmonton Oilers,New York Islanders,,,,0.0,0.0,1.0,1.0
-618,2023-01-06,2022020619,Vancouver Canucks,Colorado Avalanche,,,,0.0,0.0,1.0,0.0
-619,2023-01-06,2022020620,Vegas Golden Knights,Pittsburgh Penguins,,,,1.0,1.0,1.0,0.0
-620,2023-01-06,2022020621,Los Angeles Kings,Boston Bruins,,,,0.0,0.0,0.0,0.0
-621,2023-01-07,2022020622,Washington Capitals,Nashville Predators,,,,,,,
-622,2023-01-07,2022020623,Detroit Red Wings,Florida Panthers,,,,,,,
-623,2023-01-07,2022020624,Winnipeg Jets,Tampa Bay Lightning,,,,,,,
-624,2023-01-07,2022020625,Chicago Blackhawks,Arizona Coyotes,,,,,,,
-625,2023-01-07,2022020626,Calgary Flames,New York Islanders,,,,,,,
-626,2023-01-07,2022020627,Anaheim Ducks,San Jose Sharks,,,,,,,
-627,2023-01-07,2022020628,New Jersey Devils,New York Rangers,,,,,,,
-628,2023-01-07,2022020629,Columbus Blue Jackets,Carolina Hurricanes,,,,,,,
-629,2023-01-08,2022020630,Toronto Maple Leafs,Detroit Red Wings,,,,,,,
-630,2023-01-08,2022020631,Buffalo Sabres,Minnesota Wild,,,,,,,
-631,2023-01-08,2022020632,Ottawa Senators,Seattle Kraken,,,,,,,
-632,2023-01-08,2022020633,Montreal Canadiens,St Louis Blues,,,,,,,
-633,2023-01-08,2022020635,Vegas Golden Knights,Los Angeles Kings,,,,,,,
-634,2023-01-08,2022020634,Edmonton Oilers,Colorado Avalanche,,,,,,,
-635,2023-01-08,2022020636,San Jose Sharks,Boston Bruins,,,,,,,
-636,2023-01-08,2022020638,Winnipeg Jets,Vancouver Canucks,,,,,,,
-637,2023-01-08,2022020637,Dallas Stars,Florida Panthers,,,,,,,
-638,2023-01-08,2022020639,Washington Capitals,Columbus Blue Jackets,,,,,,,
-639,2023-01-09,2022020641,Arizona Coyotes,Pittsburgh Penguins,,,,,,,
-640,2023-01-09,2022020640,Chicago Blackhawks,Calgary Flames,,,,,,,
-641,2023-01-09,2022020642,Minnesota Wild,St Louis Blues,,,,,,,
-642,2023-01-09,2022020643,Philadelphia Flyers,Toronto Maple Leafs,,,,,,,
-643,2023-01-09,2022020644,Anaheim Ducks,Boston Bruins,,,,,,,
-644,2023-01-10,2022020645,Ottawa Senators,Nashville Predators,,,,,,,
-645,2023-01-10,2022020646,Montreal Canadiens,Seattle Kraken,,,,,,,
-646,2023-01-10,2022020647,Los Angeles Kings,Edmonton Oilers,,,,,,,
-647,2023-01-11,2022020648,Tampa Bay Lightning,Columbus Blue Jackets,,,,,,,
-648,2023-01-11,2022020649,New York Rangers,Minnesota Wild,,,,,,,
-649,2023-01-11,2022020650,Carolina Hurricanes,New Jersey Devils,,,,,,,
-650,2023-01-11,2022020651,Buffalo Sabres,Seattle Kraken,,,,,,,
-651,2023-01-11,2022020652,Pittsburgh Penguins,Vancouver Canucks,,,,,,,
-652,2023-01-11,2022020654,Detroit Red Wings,Winnipeg Jets,,,,,,,
-653,2023-01-11,2022020653,New York Islanders,Dallas Stars,,,,,,,
-654,2023-01-11,2022020655,St Louis Blues,Calgary Flames,,,,,,,
-655,2023-01-11,2022020656,Colorado Avalanche,Florida Panthers,,,,,,,
-656,2023-01-11,2022020657,Arizona Coyotes,San Jose Sharks,,,,,,,
+611,2023-01-06,2022020612,Philadelphia Flyers,Arizona Coyotes,6.0,2.0,1.0,0.0,0.0,1.0,0.0
+612,2023-01-06,2022020613,Montreal Canadiens,New York Rangers,1.0,4.0,0.0,0.0,0.0,0.0,1.0
+613,2023-01-06,2022020614,Carolina Hurricanes,Nashville Predators,3.0,5.0,0.0,1.0,1.0,1.0,1.0
+614,2023-01-06,2022020615,Toronto Maple Leafs,Seattle Kraken,1.0,5.0,0.0,1.0,1.0,1.0,1.0
+615,2023-01-06,2022020616,New Jersey Devils,St Louis Blues,3.0,5.0,0.0,1.0,1.0,1.0,1.0
+616,2023-01-06,2022020617,Columbus Blue Jackets,Washington Capitals,2.0,6.0,0.0,0.0,0.0,0.0,0.0
+617,2023-01-06,2022020618,Edmonton Oilers,New York Islanders,4.0,2.0,1.0,0.0,0.0,1.0,1.0
+618,2023-01-06,2022020619,Vancouver Canucks,Colorado Avalanche,4.0,2.0,1.0,0.0,0.0,1.0,0.0
+619,2023-01-06,2022020620,Vegas Golden Knights,Pittsburgh Penguins,5.0,2.0,1.0,1.0,1.0,1.0,0.0
+620,2023-01-06,2022020621,Los Angeles Kings,Boston Bruins,2.0,5.0,0.0,0.0,0.0,0.0,0.0
+621,2023-01-07,2022020622,Washington Capitals,Nashville Predators,2.0,3.0,0.0,1.0,1.0,1.0,1.0
+622,2023-01-07,2022020623,Detroit Red Wings,Florida Panthers,2.0,3.0,0.0,0.0,0.0,1.0,0.0
+623,2023-01-07,2022020624,Winnipeg Jets,Tampa Bay Lightning,4.0,2.0,1.0,0.0,0.0,1.0,1.0
+624,2023-01-07,2022020625,Chicago Blackhawks,Arizona Coyotes,2.0,0.0,1.0,0.0,0.0,0.0,0.0
+625,2023-01-07,2022020626,Calgary Flames,New York Islanders,4.0,1.0,1.0,0.0,0.0,1.0,0.0
+626,2023-01-07,2022020627,Anaheim Ducks,San Jose Sharks,5.0,4.0,1.0,0.0,0.0,0.0,0.0
+627,2023-01-07,2022020628,New Jersey Devils,New York Rangers,4.0,3.0,1.0,1.0,1.0,1.0,1.0
+628,2023-01-07,2022020629,Columbus Blue Jackets,Carolina Hurricanes,4.0,3.0,1.0,0.0,0.0,0.0,1.0
+629,2023-01-08,2022020630,Toronto Maple Leafs,Detroit Red Wings,4.0,1.0,1.0,1.0,1.0,1.0,1.0
+630,2023-01-08,2022020631,Buffalo Sabres,Minnesota Wild,6.0,5.0,1.0,1.0,1.0,1.0,0.0
+631,2023-01-08,2022020632,Ottawa Senators,Seattle Kraken,4.0,8.0,0.0,1.0,1.0,0.0,1.0
+632,2023-01-08,2022020633,Montreal Canadiens,St Louis Blues,5.0,4.0,1.0,0.0,0.0,0.0,0.0
+633,2023-01-08,2022020635,Vegas Golden Knights,Los Angeles Kings,1.0,5.0,0.0,1.0,1.0,1.0,1.0
+634,2023-01-08,2022020634,Edmonton Oilers,Colorado Avalanche,2.0,3.0,0.0,1.0,1.0,1.0,1.0
+635,2023-01-08,2022020636,San Jose Sharks,Boston Bruins,2.0,4.0,0.0,0.0,0.0,0.0,0.0
+636,2023-01-08,2022020638,Winnipeg Jets,Vancouver Canucks,7.0,4.0,1.0,1.0,1.0,1.0,1.0
+637,2023-01-08,2022020637,Dallas Stars,Florida Panthers,5.0,1.0,1.0,1.0,1.0,1.0,0.0
+638,2023-01-08,2022020639,Washington Capitals,Columbus Blue Jackets,1.0,0.0,1.0,1.0,1.0,1.0,0.0
+639,2023-01-09,2022020641,Arizona Coyotes,Pittsburgh Penguins,1.0,4.0,0.0,0.0,0.0,0.0,0.0
+640,2023-01-09,2022020640,Chicago Blackhawks,Calgary Flames,4.0,3.0,1.0,0.0,0.0,0.0,0.0
+641,2023-01-09,2022020642,Minnesota Wild,St Louis Blues,0.0,3.0,0.0,1.0,1.0,1.0,1.0
+642,2023-01-09,2022020643,Philadelphia Flyers,Toronto Maple Leafs,2.0,6.0,0.0,0.0,0.0,1.0,0.0
+643,2023-01-09,2022020644,Anaheim Ducks,Boston Bruins,1.0,7.0,0.0,0.0,0.0,0.0,0.0
+644,2023-01-10,2022020645,Ottawa Senators,Nashville Predators,0.0,3.0,0.0,1.0,1.0,0.0,0.0
+645,2023-01-10,2022020646,Montreal Canadiens,Seattle Kraken,0.0,4.0,0.0,0.0,0.0,0.0,0.0
+646,2023-01-10,2022020647,Los Angeles Kings,Edmonton Oilers,6.0,3.0,1.0,0.0,0.0,1.0,1.0
+647,2023-01-11,2022020648,Tampa Bay Lightning,Columbus Blue Jackets,,,,1.0,1.0,1.0,1.0
+648,2023-01-11,2022020649,New York Rangers,Minnesota Wild,,,,0.0,0.0,1.0,0.0
+649,2023-01-11,2022020650,Carolina Hurricanes,New Jersey Devils,,,,1.0,1.0,0.0,1.0
+650,2023-01-11,2022020651,Buffalo Sabres,Seattle Kraken,,,,1.0,1.0,0.0,0.0
+651,2023-01-11,2022020652,Pittsburgh Penguins,Vancouver Canucks,,,,1.0,1.0,1.0,1.0
+652,2023-01-11,2022020654,Detroit Red Wings,Winnipeg Jets,,,,0.0,0.0,1.0,0.0
+653,2023-01-11,2022020653,New York Islanders,Dallas Stars,,,,0.0,0.0,1.0,0.0
+654,2023-01-11,2022020655,St Louis Blues,Calgary Flames,,,,0.0,0.0,1.0,1.0
+655,2023-01-11,2022020656,Colorado Avalanche,Florida Panthers,,,,1.0,1.0,1.0,0.0
+656,2023-01-11,2022020657,Arizona Coyotes,San Jose Sharks,,,,0.0,0.0,0.0,0.0
 657,2023-01-12,2022020659,Philadelphia Flyers,Washington Capitals,,,,,,,
 658,2023-01-12,2022020658,Toronto Maple Leafs,Nashville Predators,,,,,,,
 659,2023-01-12,2022020660,Anaheim Ducks,Edmonton Oilers,,,,,,,
@@ -538,7 +538,7 @@ index,date,game_id,home_team,away_team,home_team_goals,away_team_goals,result,lo
 986,2023-03-04,2022020987,Anaheim Ducks,Montreal Canadiens,,,,,,,
 987,2023-03-04,2022020988,Vegas Golden Knights,New Jersey Devils,,,,,,,
 988,2023-03-04,2022020989,New York Islanders,Detroit Red Wings,,,,,,,
-989,2023-03-04,2022020990,Buffalo Sabres,Philadelphia Flyers,,,,,,,
+989,2023-03-04,2022020990,Buffalo Sabres,Philadelphia Flyers,0.0,4.0,0.0,,,,
 990,2023-03-04,2022020991,Boston Bruins,New York Rangers,,,,,,,
 991,2023-03-04,2022020997,Dallas Stars,Colorado Avalanche,,,,,,,
 992,2023-03-04,2022020993,San Jose Sharks,Washington Capitals,,,,,,,

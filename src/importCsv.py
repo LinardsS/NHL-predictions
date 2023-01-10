@@ -16,6 +16,10 @@ def getTeamsStats(date, home_team, away_team, format = None, backdate = None):
     filename = FILE_PREFIX + date + '.csv'
     filepath = path.abspath(path.join(basepath, "..", "data", filename))
 
+    if not path.exists(filepath):
+        print("Team stats not found for ",date, home_team,away_team)
+        return {}
+
     with open(filepath) as csv_file:
         csv_reader = csv.DictReader(csv_file, delimiter=',')
         return_dict = {}

@@ -1,0 +1,54 @@
+2023-01-07 Washington Capitals Nashville Predators
+2023-01-07 Detroit Red Wings Florida Panthers
+2023-01-07 Winnipeg Jets Tampa Bay Lightning
+2023-01-07 Chicago Blackhawks Arizona Coyotes
+2023-01-07 Calgary Flames New York Islanders
+2023-01-07 Anaheim Ducks San Jose Sharks
+Logreg prediction count:  177
+Correct logreg prediction count:  97
+Logreg_np prediction count:  171
+Correct logreg_np prediction count:  95
+Decision tree prediction count:  54
+Correct decision tree prediction count:  30
+Random forest prediction count:  38
+Correct random forest prediction count:  16
+Logreg: Toronto Maple Leafs - Detroit Red Wings will result as: 1.0
+No point%: Toronto Maple Leafs - Detroit Red Wings will result as: 1.0
+Dt: Toronto Maple Leafs - Detroit Red Wings will result as: 1.0
+Rf: Toronto Maple Leafs - Detroit Red Wings will result as: 1.0
+Logreg: Buffalo Sabres - Minnesota Wild will result as: 1.0
+No point%: Buffalo Sabres - Minnesota Wild will result as: 1.0
+Dt: Buffalo Sabres - Minnesota Wild will result as: 1.0
+Rf: Buffalo Sabres - Minnesota Wild will result as: 1.0
+Logreg: Ottawa Senators - Seattle Kraken will result as: 1.0
+No point%: Ottawa Senators - Seattle Kraken will result as: 1.0
+Dt: Ottawa Senators - Seattle Kraken will result as: 0.0
+Rf: Ottawa Senators - Seattle Kraken will result as: 0.0
+Logreg: Montreal Canadiens - St Louis Blues will result as: 0.0
+No point%: Montreal Canadiens - St Louis Blues will result as: 0.0
+Dt: Montreal Canadiens - St Louis Blues will result as: 0.0
+Rf: Montreal Canadiens - St Louis Blues will result as: 0.0
+Logreg: Vegas Golden Knights - Los Angeles Kings will result as: 1.0
+No point%: Vegas Golden Knights - Los Angeles Kings will result as: 1.0
+Dt: Vegas Golden Knights - Los Angeles Kings will result as: 1.0
+Rf: Vegas Golden Knights - Los Angeles Kings will result as: 1.0
+Logreg: Edmonton Oilers - Colorado Avalanche will result as: 1.0
+No point%: Edmonton Oilers - Colorado Avalanche will result as: 1.0
+Dt: Edmonton Oilers - Colorado Avalanche will result as: 1.0
+Rf: Edmonton Oilers - Colorado Avalanche will result as: 1.0
+Logreg: San Jose Sharks - Boston Bruins will result as: 0.0
+No point%: San Jose Sharks - Boston Bruins will result as: 0.0
+Dt: San Jose Sharks - Boston Bruins will result as: 0.0
+Rf: San Jose Sharks - Boston Bruins will result as: 0.0
+Logreg: Winnipeg Jets - Vancouver Canucks will result as: 1.0
+No point%: Winnipeg Jets - Vancouver Canucks will result as: 1.0
+Dt: Winnipeg Jets - Vancouver Canucks will result as: 1.0
+Rf: Winnipeg Jets - Vancouver Canucks will result as: 1.0
+Logreg: Dallas Stars - Florida Panthers will result as: 1.0
+No point%: Dallas Stars - Florida Panthers will result as: 1.0
+Dt: Dallas Stars - Florida Panthers will result as: 1.0
+Rf: Dallas Stars - Florida Panthers will result as: 1.0
+Logreg: Washington Capitals - Columbus Blue Jackets will result as: 1.0
+No point%: Washington Capitals - Columbus Blue Jackets will result as: 1.0
+Dt: Washington Capitals - Columbus Blue Jackets will result as: 1.0
+Rf: Washington Capitals - Columbus Blue Jackets will result as: 1.0

@@ -1,0 +1,37 @@
+2023-01-07 New Jersey Devils New York Rangers
+2023-01-07 Columbus Blue Jackets Carolina Hurricanes
+2023-01-08 Toronto Maple Leafs Detroit Red Wings
+2023-01-08 Buffalo Sabres Minnesota Wild
+2023-01-08 Ottawa Senators Seattle Kraken
+2023-01-08 Montreal Canadiens St Louis Blues
+2023-01-08 Vegas Golden Knights Los Angeles Kings
+2023-01-08 Edmonton Oilers Colorado Avalanche
+2023-01-08 San Jose Sharks Boston Bruins
+Logreg prediction count:  186
+Correct logreg prediction count:  101
+Logreg_np prediction count:  180
+Correct logreg_np prediction count:  99
+Decision tree prediction count:  63
+Correct decision tree prediction count:  35
+Random forest prediction count:  47
+Correct random forest prediction count:  20
+Logreg: Arizona Coyotes - Pittsburgh Penguins will result as: 0.0
+No point%: Arizona Coyotes - Pittsburgh Penguins will result as: 0.0
+Dt: Arizona Coyotes - Pittsburgh Penguins will result as: 0.0
+Rf: Arizona Coyotes - Pittsburgh Penguins will result as: 0.0
+Logreg: Chicago Blackhawks - Calgary Flames will result as: 0.0
+No point%: Chicago Blackhawks - Calgary Flames will result as: 0.0
+Dt: Chicago Blackhawks - Calgary Flames will result as: 0.0
+Rf: Chicago Blackhawks - Calgary Flames will result as: 0.0
+Logreg: Minnesota Wild - St Louis Blues will result as: 1.0
+No point%: Minnesota Wild - St Louis Blues will result as: 1.0
+Dt: Minnesota Wild - St Louis Blues will result as: 1.0
+Rf: Minnesota Wild - St Louis Blues will result as: 1.0
+Logreg: Philadelphia Flyers - Toronto Maple Leafs will result as: 0.0
+No point%: Philadelphia Flyers - Toronto Maple Leafs will result as: 0.0
+Dt: Philadelphia Flyers - Toronto Maple Leafs will result as: 1.0
+Rf: Philadelphia Flyers - Toronto Maple Leafs will result as: 1.0
+Logreg: Anaheim Ducks - Boston Bruins will result as: 0.0
+No point%: Anaheim Ducks - Boston Bruins will result as: 0.0
+Dt: Anaheim Ducks - Boston Bruins will result as: 0.0
+Rf: Anaheim Ducks - Boston Bruins will result as: 0.0

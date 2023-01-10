@@ -1,0 +1,40 @@
+Logreg: Tampa Bay Lightning - Columbus Blue Jackets will result as: 1.0
+No point%: Tampa Bay Lightning - Columbus Blue Jackets will result as: 1.0
+Dt: Tampa Bay Lightning - Columbus Blue Jackets will result as: 1.0
+Rf: Tampa Bay Lightning - Columbus Blue Jackets will result as: 1.0
+Logreg: New York Rangers - Minnesota Wild will result as: 0.0
+No point%: New York Rangers - Minnesota Wild will result as: 0.0
+Dt: New York Rangers - Minnesota Wild will result as: 1.0
+Rf: New York Rangers - Minnesota Wild will result as: 1.0
+Logreg: Carolina Hurricanes - New Jersey Devils will result as: 1.0
+No point%: Carolina Hurricanes - New Jersey Devils will result as: 1.0
+Dt: Carolina Hurricanes - New Jersey Devils will result as: 0.0
+Rf: Carolina Hurricanes - New Jersey Devils will result as: 0.0
+Logreg: Buffalo Sabres - Seattle Kraken will result as: 1.0
+No point%: Buffalo Sabres - Seattle Kraken will result as: 1.0
+Dt: Buffalo Sabres - Seattle Kraken will result as: 0.0
+Rf: Buffalo Sabres - Seattle Kraken will result as: 0.0
+Logreg: Pittsburgh Penguins - Vancouver Canucks will result as: 1.0
+No point%: Pittsburgh Penguins - Vancouver Canucks will result as: 1.0
+Dt: Pittsburgh Penguins - Vancouver Canucks will result as: 1.0
+Rf: Pittsburgh Penguins - Vancouver Canucks will result as: 1.0
+Logreg: Detroit Red Wings - Winnipeg Jets will result as: 0.0
+No point%: Detroit Red Wings - Winnipeg Jets will result as: 0.0
+Dt: Detroit Red Wings - Winnipeg Jets will result as: 1.0
+Rf: Detroit Red Wings - Winnipeg Jets will result as: 1.0
+Logreg: New York Islanders - Dallas Stars will result as: 0.0
+No point%: New York Islanders - Dallas Stars will result as: 0.0
+Dt: New York Islanders - Dallas Stars will result as: 1.0
+Rf: New York Islanders - Dallas Stars will result as: 1.0
+Logreg: St Louis Blues - Calgary Flames will result as: 0.0
+No point%: St Louis Blues - Calgary Flames will result as: 0.0
+Dt: St Louis Blues - Calgary Flames will result as: 1.0
+Rf: St Louis Blues - Calgary Flames will result as: 1.0
+Logreg: Colorado Avalanche - Florida Panthers will result as: 1.0
+No point%: Colorado Avalanche - Florida Panthers will result as: 1.0
+Dt: Colorado Avalanche - Florida Panthers will result as: 1.0
+Rf: Colorado Avalanche - Florida Panthers will result as: 1.0
+Logreg: Arizona Coyotes - San Jose Sharks will result as: 0.0
+No point%: Arizona Coyotes - San Jose Sharks will result as: 0.0
+Dt: Arizona Coyotes - San Jose Sharks will result as: 0.0
+Rf: Arizona Coyotes - San Jose Sharks will result as: 0.0

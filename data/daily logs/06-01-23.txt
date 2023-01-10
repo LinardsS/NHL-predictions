@@ -1,0 +1,50 @@
+2023-01-06 Philadelphia Flyers Arizona Coyotes
+2023-01-06 Montreal Canadiens New York Rangers
+2023-01-06 Carolina Hurricanes Nashville Predators
+2023-01-06 Toronto Maple Leafs Seattle Kraken
+2023-01-06 New Jersey Devils St Louis Blues
+2023-01-06 Columbus Blue Jackets Washington Capitals
+2023-01-06 Edmonton Oilers New York Islanders
+2023-01-06 Vancouver Canucks Colorado Avalanche
+2023-01-06 Vegas Golden Knights Pittsburgh Penguins
+2023-01-06 Los Angeles Kings Boston Bruins
+Logreg prediction count:  171
+Correct logreg prediction count:  96
+Logreg_np prediction count:  165
+Correct logreg_np prediction count:  94
+Decision tree prediction count:  48
+Correct decision tree prediction count:  28
+Random forest prediction count:  32
+Correct random forest prediction count:  14
+Logreg: Washington Capitals - Nashville Predators will result as: 1.0
+No point%: Washington Capitals - Nashville Predators will result as: 1.0
+Dt: Washington Capitals - Nashville Predators will result as: 1.0
+Rf: Washington Capitals - Nashville Predators will result as: 1.0
+Logreg: Detroit Red Wings - Florida Panthers will result as: 0.0
+No point%: Detroit Red Wings - Florida Panthers will result as: 0.0
+Dt: Detroit Red Wings - Florida Panthers will result as: 1.0
+Rf: Detroit Red Wings - Florida Panthers will result as: 1.0
+Logreg: Winnipeg Jets - Tampa Bay Lightning will result as: 0.0
+No point%: Winnipeg Jets - Tampa Bay Lightning will result as: 0.0
+Dt: Winnipeg Jets - Tampa Bay Lightning will result as: 1.0
+Rf: Winnipeg Jets - Tampa Bay Lightning will result as: 1.0
+Logreg: Chicago Blackhawks - Arizona Coyotes will result as: 0.0
+No point%: Chicago Blackhawks - Arizona Coyotes will result as: 0.0
+Dt: Chicago Blackhawks - Arizona Coyotes will result as: 0.0
+Rf: Chicago Blackhawks - Arizona Coyotes will result as: 0.0
+Logreg: Calgary Flames - New York Islanders will result as: 0.0
+No point%: Calgary Flames - New York Islanders will result as: 0.0
+Dt: Calgary Flames - New York Islanders will result as: 1.0
+Rf: Calgary Flames - New York Islanders will result as: 1.0
+Logreg: Anaheim Ducks - San Jose Sharks will result as: 0.0
+No point%: Anaheim Ducks - San Jose Sharks will result as: 0.0
+Dt: Anaheim Ducks - San Jose Sharks will result as: 0.0
+Rf: Anaheim Ducks - San Jose Sharks will result as: 0.0
+Logreg: New Jersey Devils - New York Rangers will result as: 1.0
+No point%: New Jersey Devils - New York Rangers will result as: 1.0
+Dt: New Jersey Devils - New York Rangers will result as: 1.0
+Rf: New Jersey Devils - New York Rangers will result as: 1.0
+Logreg: Columbus Blue Jackets - Carolina Hurricanes will result as: 0.0
+No point%: Columbus Blue Jackets - Carolina Hurricanes will result as: 0.0
+Dt: Columbus Blue Jackets - Carolina Hurricanes will result as: 0.0
+Rf: Columbus Blue Jackets - Carolina Hurricanes will result as: 0.0
